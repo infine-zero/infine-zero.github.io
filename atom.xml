@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-17T12:21:21.016Z</updated>
+  <updated>2023-04-17T17:00:18.146Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test2</title>
+    <link href="http://example.com/2023/04/18/test2/"/>
+    <id>http://example.com/2023/04/18/test2/</id>
+    <published>2023-04-17T16:57:28.000Z</published>
+    <updated>2023-04-17T17:00:18.146Z</updated>
+    
+    <content type="html"><![CDATA[<p>something only for test.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;something only for test.&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="programming" scheme="http://example.com/categories/programming/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>碎碎念2 | 夏天的标记</title>
@@ -253,9 +276,9 @@
     <link href="http://example.com/2023/04/15/hello-world/"/>
     <id>http://example.com/2023/04/15/hello-world/</id>
     <published>2023-04-15T06:50:07.400Z</published>
-    <updated>2023-04-16T16:46:24.466Z</updated>
+    <updated>2023-04-17T16:19:03.993Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="建站成功"><a href="#建站成功" class="headerlink" title="建站成功"></a>建站成功</h2><p>2023 | 4 | 15</p><h2 id="加入加密功能"><a href="#加入加密功能" class="headerlink" title="加入加密功能"></a>加入加密功能</h2><p>2023 | 4 | 16</p><h2 id="加入评论功能"><a href="#加入评论功能" class="headerlink" title="加入评论功能"></a>加入评论功能</h2><p>2023 | 4 | 17</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="建站成功"><a href="#建站成功" class="headerlink" title="建站成功"></a>建站成功</h2><p>2023 | 4 | 15</p><h2 id="加入加密功能"><a href="#加入加密功能" class="headerlink" title="加入加密功能"></a>加入加密功能</h2><p>2023 | 4 | 16</p><h2 id="加入评论功能"><a href="#加入评论功能" class="headerlink" title="加入评论功能"></a>加入评论功能</h2><p>2023 | 4 | 17</p><h2 id="尝试配置RSS"><a href="#尝试配置RSS" class="headerlink" title="尝试配置RSS"></a>尝试配置RSS</h2><p>2023 | 4 | 17</p><h2 id="尝试修改主题布局"><a href="#尝试修改主题布局" class="headerlink" title="尝试修改主题布局"></a>尝试修改主题布局</h2><p><strong>archive.ejs</strong></p><section class="px-6 max-w-prose mx-auto gap-12 grid grid-cols-1">定义section元素，使用CSS网格布局(grid)<p>grid对应一列(column)，最多只能容纳一个子元素（主页面post略缩条），具有指定的类名<br>px-6,左右内边距(padding)为6px<br>max-w-prose， 指定内容宽度的类<br>gap-12 子元素（略缩条）间距12px<br>mx-auto类：水平居中</p>]]></content>
     
     
       
