@@ -1,11 +1,8 @@
 ---
 title: Journal 2| A trip to Utopia
 date: 2023-04-15 16:56:28
+categories: life
 tags: birds
-password: 
-abstract: 杜鹃花 | 银喉长尾山雀 | 白头鹎 | 红胁蓝尾鸲
-message: 这里没有密码，请直接回车进入
-wrong_pass_message: 真的没有密码啦，啥也别输噢
 ---
 ## forest_230402 ##
 
@@ -19,7 +16,7 @@ Rhododendron 杜鹃花 Rhododendron | Aegithalos caudatus 银喉长尾山雀 Lon
 
 ---
 
-# Scene 2:Hide and Seek #
+## Scene 2:Hide and Seek #
 
 ![Where am I?](https://s2.loli.net/2023/04/15/KtBcp1I9kLjZDhT.jpg)
 

@@ -1,8 +1,8 @@
 ---
 title: Journal 1| Love story or a dream
 date: 2023-04-15 16:38:42
+categories: life
 tags: birds
-abstract: Urocissa erythrorhyncha 红嘴蓝鹊 Red-billed Blue Magpie
 ---
 ## bird_lakeisland_230410 ##
 

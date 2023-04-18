@@ -1,11 +1,12 @@
 ---
 title: Journal 7| When daylight falls too heavy
 date: 2023-04-17 01:44:54
+categories: life
 tags: birds
 ---
 ## pond_230416 ##
 
-Pica Pica	喜鹊	Common Magpie | Pycnonotus sinensis	白头鹎	Chinese Bulbul | Nycticorax nycticorax	夜鹭	Black-crowned Night Heron | Lanius schach	棕背伯劳	Long-tailed Shrike | Acridotheres cristatellus	八哥	Crested Myna | Anthus hodgsoni	树鹨	Olive-backed Pipit | Gallinula chloropus	黑水鸡	Common Moorhen | Ficedula zanthopygia	白眉姬鹟	Yellow-rumped Flycatcher
+Pica Serica	喜鹊	Oriental Magpie | Pycnonotus sinensis	白头鹎	Chinese Bulbul | Nycticorax nycticorax	夜鹭	Black-crowned Night Heron | Lanius schach	棕背伯劳	Long-tailed Shrike | Acridotheres cristatellus	八哥	Crested Myna | Anthus hodgsoni	树鹨	Olive-backed Pipit | Tachybaptus ruficollis	小䴙䴘	Little Grebe | Ficedula zanthopygia	白眉姬鹟	Yellow-rumped Flycatcher | Streptopelia chinensis	珠颈斑鸠	Spotted Dove | Copsychus saularis	鹊鸲	Magpie Robin | Paradoxornis webbianus 棕头鸦雀 Vinous-throated Crowtit
 
 ---
 # Scene 1:Tiny #
@@ -36,7 +37,7 @@ Pica Pica	喜鹊	Common Magpie | Pycnonotus sinensis	白头鹎	Chinese Bulbul | 
 
 ![raise your head](https://s2.loli.net/2023/04/17/1GxsjtcYPmq5IzK.jpg)
 
-![shruging](https://s2.loli.net/2023/04/17/LqsoP8wM6CykzEK.jpg)
+![shrugging](https://s2.loli.net/2023/04/17/LqsoP8wM6CykzEK.jpg)
 
 ![perfectly balanced patterns](https://s2.loli.net/2023/04/17/XslqnUabT7Z19RD.jpg)
 

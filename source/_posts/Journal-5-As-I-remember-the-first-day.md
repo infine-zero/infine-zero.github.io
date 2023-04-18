@@ -1,6 +1,7 @@
 ---
 title: Journal 5| As I remember the first day
 date: 2023-04-15 20:17:17
+categories: life
 tags: birds
 ---
 ## multiple places_230311_dusk ##
@@ -13,7 +14,7 @@ Urocissa erythrorhyncha  喜鹊  Magpie | Turdus hortulorum	灰背鸫	Grey-backe
 
 ![wait in line](https://s2.loli.net/2023/04/17/vFmZX6i1BQz9PKe.jpg)
 
-![Astonishing blue reveals the truth that it has managed hard life over 2 years, which is rare for a tiny robin](https://s2.loli.net/2023/04/17/Li78jAJo54MHWdq.jpg)
+![Astonishing blue reveals the truth that it has managed hard life over 2 years, which is rare for a robin tiny ](https://s2.loli.net/2023/04/17/Li78jAJo54MHWdq.jpg)
 
 ![Unlike its familiar cousin, grey-backed thrush is much more timid. ](https://s2.loli.net/2023/04/17/cVmSR7FTZX6jyKJ.jpg)
 

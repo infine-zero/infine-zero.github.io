@@ -1,6 +1,7 @@
 ---
 title: Journal 8| Develop photos
 date: 2023-04-17 02:35:03
+categories: life
 tags: plants
 ---
 ## pond_230416 ##
@@ -15,7 +16,16 @@ something else that lives in here.
 
 ![overwhelmed life](https://s2.loli.net/2023/04/17/J7uhpEFboXUnCqY.jpg)
 
-# Scene 2:Masque #
+![hold](https://s2.loli.net/2023/04/17/kxFElKjAOd6YJbT.jpg)
+
+# Scene 2:Harvest #
+
+![stand out](https://s2.loli.net/2023/04/17/TbNfuXzYZEynilO.jpg)
+
+![mountain of harvest](https://s2.loli.net/2023/04/17/kPcFhV9OLuaxobl.jpg)
+
+
+# Scene 3:Masque #
 
 ![embrace, one step forward, and back](https://s2.loli.net/2023/04/17/5wJlQjWrbz8M2Eu.jpg)
 
@@ -27,11 +37,13 @@ something else that lives in here.
 
 ---
 
-# Scene 3:Home #
+# Scene 4:Home #
 
 ![Fallingwater Pennsylvania](https://s2.loli.net/2023/04/17/adGVZULtXj4b6vo.jpg)
 
 ![abandoned, free wallet](https://s2.loli.net/2023/04/17/G3jfi5VxR8Q7pgX.jpg)
+
+![grass house](https://s2.loli.net/2023/04/17/FkVWQSwdPslUIuR.jpg)
 
 ![tree fall](https://s2.loli.net/2023/04/17/KHtuJWBip54XfoM.jpg)
 

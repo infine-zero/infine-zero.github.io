@@ -1,14 +1,15 @@
 ---
 title: Journal 6| Patterns
 date: 2023-04-16 20:00:41
+categories: life
 tags: images
 ---
-## pond_230416 ##
+# pond_230416 #
 
 patterns weaved by plants, earth and water.
 
 ---
-# Scene 1:Illusion #
+## Scene 1:Illusion ##
 
 ![water adorned glowing shadows and tree leaves](https://s2.loli.net/2023/04/16/OSKqRZnUcH9fmJd.jpg)
 
@@ -20,7 +21,7 @@ patterns weaved by plants, earth and water.
 
 ---
 
-# Scene 2:Memory #
+## Scene 2:Memory ##
 
 ![imposter](https://s2.loli.net/2023/04/16/wEZvWoAkzFbD2QH.jpg)
 
@@ -32,6 +33,6 @@ patterns weaved by plants, earth and water.
 
 ---
 
-# Scene 3:Time #
+## Scene 3:Time ##
 
 ![dusk、noon、night, or forenoon](https://s2.loli.net/2023/04/16/HaE7C1GQSMDLetI.jpg)

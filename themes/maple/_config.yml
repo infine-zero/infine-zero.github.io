@@ -1,25 +1,23 @@
 # Header
 nav:
-  Posts: /archives
-  # Categories: /category
-  # Tags: /tag
+  Categories: /category
+  #Tags: /tag
+  About: /about
 
 # favicon
-favicon: /favicon.png
+favicon: /logo.svg
 
 # logo
-logo: /images/logo.svg
+logo: /logo.svg
 
 # links
 links:
-  Github: https://github.com/xbmlz
+  # Github: https://github.com/xbmlz
   # ZhiHu:
   # Twitter:
   # Weibo:
+  Bilibili: https://space.bilibili.com/10838981
 
-# analytics
-google_analytics:
-baidu_analytics:
 
 # mathjax
 fancybox: false
@@ -54,5 +52,10 @@ giscus:
   data-lang: "zh-CN"
   crossorigin: "anonymous"
 
-
-
+# RSS订阅
+rss: /atom.xml
+sidebar_rss:
+  text: RSS
+  icon: fa fa-rss
+  color: burlywood
+  link: atom.xml

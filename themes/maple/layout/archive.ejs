@@ -1,4 +1,4 @@
-<section class="px-6 max-w-prose mx-auto gap-12 grid grid-cols-1">
+<section class="px-0 max-w-prose mx-auto gap-12 grid grid-cols-1">
   <div class="flex flex-col h-48 items-center justify-center">
     <h1 class="site-title text-4xl leading-relaxed">
       <%= config.title %>
@@ -12,7 +12,7 @@
     <% var cur_year = post.date.year(); %>
     <% if(last_year !== cur_year){ %>
       <div class="relative pointer-events-none">
-        <span class="text-9xl opacity-10 absolute -left-11 -top-6 font-bold"><%- cur_year %></span>
+        <span class="text-9xl opacity-10 absolute -left-1 -top-6 font-bold"><%- cur_year %></span>
       </div>
     <% last_year = cur_year; } %>
     <a href="<%- url_for(post.path) %>">

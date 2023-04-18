@@ -1,6 +1,7 @@
 ---
 title: Journal 4| Sunny day and sunny mood
 date: 2023-04-15 17:48:04
+categories: life
 tags: birds
 password: 
 abstract: 银喉长尾山雀 | 红头长尾山雀 | 燕雀 | 白头鹎 | 红胁蓝尾鸲 | 斑姬啄木鸟 | 树鹨
