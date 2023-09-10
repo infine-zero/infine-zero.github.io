@@ -60,3 +60,6 @@ tag_map:
 左上角logo在托管界面无法正常显示
 
 已解决：把 images/logo.svg路径换为/logo.svg,让它用和favicon一样的图 相对路径错误？（上传到GitHub的文件格式与本地不同）
+
+### 实现多主机部署 ###
+2023 | 4 | 19
