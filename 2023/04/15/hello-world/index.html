@@ -190,11 +190,11 @@
       </p>
       <div>
         <section class="flex items-center gap-3 text-sm">
-          <time>2023-04-19 04:02:00</time>
+          <time>2024-01-22 22:41:59</time>
           <span class="text-gray-400">·</span>
           <span>1 min</span>
           <span class="text-gray-400">·</span>
-          <span>355 words</span>
+          <span>410 words</span>
         </section>
       </div>
     </div>
@@ -229,6 +229,7 @@ tag_map:
 <p><strong>git push: error403</strong><br>    github: Permission to xxxx.git denied to yyy. （ fatal: 无法访问 returned error: 403）</p>
 <pre><code>git remote set-url git@github.com:infine-zero/infine-zero.github.io.git
 </code></pre>
+<p>**ssh: connect to host github.com port 22: Connection timed out<br>fatal: Could not read from remote repository.<br>**<br>    git安装位置，etc&#x2F;.ssh&#x2F;ssh_config.yml末尾添加<br>        Host github.com<br>        Hostname ssh.github.com<br>        User git<br>        PreferredAuthentications publickey<br>        IdentityFile ~&#x2F;.ssh&#x2F;id_rsa # eg. ~&#x2F;.ssh&#x2F;id_rsa<br>        Port 443</p>
 
   </article>
   <!-- tag -->
