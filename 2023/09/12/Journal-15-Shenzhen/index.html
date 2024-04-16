@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Infine">
+
+
+  <meta name="subtitle" content="infine_island：Welcome to wander. Comments are available here. Please use PC for best experience.">
+
+
+  <meta name="description" content="welcome to wander">
+
+
+
+<title>Journal 15| Shenzhen | INLAND</title>
+
+
+
+<link rel="icon" href="/logo.svg">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+
+
+<script src="/lib/nprogress/nprogress.js"></script>
+
+<script>
+  $(document).ready(() => {
+    NProgress.configure({
+      showSpinner: false,
+    });
+    NProgress.start();
+    $("#nprogress .bar").css({
+      background: "#de7441",
+    });
+    $("#nprogress .peg").css({
+      "box-shadow": "0 0 2px #de7441, 0 0 4px #de7441",
+    });
+    $("#nprogress .spinner-icon").css({
+      "border-top-color": "#de7441",
+      "border-left-color": "#de7441",
+    });
+    setTimeout(function () {
+      NProgress.done();
+      $(".fade").removeClass("out");
+    }, 800);
+  });
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+  })();
+  window.onload = function () {
+    // init iconify icon
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
+      $("#toggle-dark").attr("icon", "ri:moon-line");
+    } else {
+      $("#toggle-dark").attr("icon", "ri:sun-line");
+    }
+
+    const toggleDark = () => {
+      console.log("toggle dark");
+      const darkMode = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("hexo-color-scheme", darkMode ? "dark" : "light");
+      $("#toggle-dark").attr("icon", darkMode ? "ri:moon-line" : "ri:sun-line");
+    };
+
+    $("#toggle-dark").click(toggleDark);
+  };
+</script>
+
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="INLAND" type="application/atom+xml">
+</head>
+<body class="font-sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200">
+  <header class="fixed w-full px-5 py-1 z-10 backdrop-blur-xl backdrop-saturate-150 border-b border-black/5">
+  <div class="max-auto">
+    <nav class="flex items-center text-base">
+      <a href="/" class="group">
+        <h2 class="font-medium tracking-tighterp text-l p-2">
+          <img class="w-5 mr-2 inline-block transition-transform group-hover:rotate-[30deg]" src="/logo.svg" alt="INLAND" />
+          INLAND
+        </h2>
+      </a>
+      <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        about
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-2">
+        
+          <a class="hidden sm:flex" href="/category">Categories</a>
+        
+          <a class="hidden sm:flex" href="/about">About</a>
+        
+        
+          
+            <a class="w-5 h-5 hidden sm:flex" title="Bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/10838981">
+              <iconify-icon width="20" icon="ri:bilibili-line"></iconify-icon>
+            </a>
+          
+        
+        <a class="w-5 h-5" title="toggle theme">
+          <iconify-icon width="20" icon="ri:sun-line" id="toggle-dark"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 ml-3 sm:hidden">
+        <span class="w-5 h-5" aria-hidden="true" role="img" id="open-menu">
+          <iconify-icon width="20" icon="carbon:menu" ></iconify-icon>
+        </span>
+        <span class="w-5 h-5 hidden" aria-hidden="true" role="img" id="close-menu">
+          <iconify-icon  width="20" icon="carbon:close" ></iconify-icon>
+        </span>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="menu-panel" class="h-0 overflow-hidden sm:hidden fixed left-0 right-0 top-12 bottom-0 z-10">
+  <div id="menu-content" class="relative z-20 bg-white/80 px-6 sm:px-8 py-2 backdrop-blur-xl -translate-y-full transition-transform duration-300">
+    <ul class="nav flex flex-col sm:flex-row text-sm font-medium">
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/category" class="flex h-12 sm:h-auto items-center">Categories</a>
+        </li>
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/about" class="flex h-12 sm:h-auto items-center">About</a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="mask bg-black/20 absolute inset-0"></div>
+</div>
+
+  <main class="p-6">
+    <!-- toc -->
+
+<section class="px-0 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        Journal 15| Shenzhen
+      </h1>
+      <p class="mb-6">
+        
+      </p>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <time>2023-09-12 01:10:08</time>
+          <span class="text-gray-400">·</span>
+          <span>1 min</span>
+          <span class="text-gray-400">·</span>
+          <span>0 words</span>
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content mt-10 prose dark:prose-invert post-content">
+    <p><img src="https://s2.loli.net/2023/09/12/EzDnoYdOMHhuqwa.jpg" alt="Photo_shenzhen_230825-31_15.jpg"><br><img src="https://s2.loli.net/2023/09/12/ieTxqtH8rDA2jZm.jpg" alt="Photo_shenzhen_230825-31_01.jpg"><br><img src="https://s2.loli.net/2023/09/12/3ECg6jAFvBwbfhl.jpg" alt="Photo_shenzhen_230825-31_21.jpg"><br><img src="https://s2.loli.net/2023/09/12/m6ntG5pIcosLwBR.jpg" alt="Photo_shenzhen_230825-31_06.jpg"><br><img src="https://s2.loli.net/2023/09/12/6gVDxNJnm7SPHTG.jpg" alt="Photo_shenzhen_230825-31_02.jpg"><br><img src="https://s2.loli.net/2023/09/12/r7SIWF5dQnL3VXq.jpg" alt="Photo_shenzhen_230825-31_05.jpg"><br><img src="https://s2.loli.net/2023/09/12/FcIYHRNyefOnqCM.jpg" alt="Photo_shenzhen_230825-31_19.jpg"><br><img src="https://s2.loli.net/2023/09/12/sSOonVJkfu3IR59.jpg" alt="Photo_shenzhen_230825-31_22.jpg"><br><img src="https://s2.loli.net/2023/09/12/zrUnMv8JFigfxlj.jpg" alt="Photo_shenzhen_230825-31_16.jpg"><br><img src="https://s2.loli.net/2023/09/12/oOsULn83RZ47dTr.jpg" alt="Photo_shenzhen_230825-31_07.jpg"><br><img src="https://s2.loli.net/2023/09/12/lRF1Mre42tTnP5k.jpg" alt="Photo_shenzhen_230825-31_27.jpg"><br><img src="https://s2.loli.net/2023/09/12/v6HrCkzgw8j9TKS.jpg" alt="Photo_shenzhen_230825-31_29.jpg"><br><img src="https://s2.loli.net/2023/09/12/zfC7mH4yonIUaiv.jpg" alt="Photo_shenzhen_230825-31_23.jpg"><br><img src="https://s2.loli.net/2023/09/12/RFCmhioGwNtsAYZ.jpg" alt="Photo_shenzhen_230825-31_33.jpg"><br><img src="https://s2.loli.net/2023/09/12/8I9xEtApmDevaTf.jpg" alt="Photo_shenzhen_230825-31_39.jpg"><br><img src="https://s2.loli.net/2023/09/12/f3N1ipLHbosJgtr.jpg" alt="Photo_shenzhen_230825-31_42.jpg"><br><img src="https://s2.loli.net/2023/09/12/xLCkYfhTKBvWPNc.jpg" alt="Photo_shenzhen_230825-31_26.jpg"><br><img src="https://s2.loli.net/2023/09/12/kpgXvif1GU6cld7.jpg" alt="Photo_shenzhen_230825-31_25.jpg"><br><img src="https://s2.loli.net/2023/09/12/8NtXri3QkAqwebc.jpg" alt="Photo_shenzhen_230825-31_31.jpg"><br><img src="https://s2.loli.net/2023/09/12/cZwdl9aro5WBM8S.jpg" alt="Photo_shenzhen_230825-31_32.jpg"><br><img src="https://s2.loli.net/2023/09/12/BjkEvKnurGqfRJ9.jpg" alt="Photo_shenzhen_230825-31_59.jpg"><br><img src="https://s2.loli.net/2023/09/12/nouWeQFMPSUgYb9.jpg" alt="Photo_shenzhen_230825-31_55.jpg"><br><img src="https://s2.loli.net/2023/09/12/YPvbCj5xEqguz6m.jpg" alt="Photo_shenzhen_230825-31_53.jpg"><br><img src="https://s2.loli.net/2023/09/12/LhTtRfnqAXuaOJM.jpg" alt="Photo_shenzhen_230825-31_51.jpg"><br><img src="https://s2.loli.net/2023/09/12/epEIQzqvZkgwl73.jpg" alt="Photo_shenzhen_230825-31_54.jpg"><br><img src="https://s2.loli.net/2023/09/12/3mhifXULenwvV1E.jpg" alt="Photo_shenzhen_230825-31_50.jpg"><br><img src="https://s2.loli.net/2023/09/12/RbDgKcIOtaUVhuG.jpg" alt="Photo_shenzhen_230825-31_56.jpg"><br><img src="https://s2.loli.net/2023/09/12/vylWSdr9IfizV6w.jpg" alt="Photo_shenzhen_230825-31_48.jpg"><br><img src="https://s2.loli.net/2023/09/12/DbT8hS9RHxqM1NZ.jpg" alt="Photo_shenzhen_230825-31_61.jpg"><br><img src="https://s2.loli.net/2023/09/12/QztV5ZCO6GnlusY.jpg" alt="Photo_shenzhen_230825-31_45.jpg"><br><img src="https://s2.loli.net/2023/09/12/KWepCQZoRvft56l.jpg" alt="Photo_shenzhen_230825-31_74.jpg"><br><img src="https://s2.loli.net/2023/09/12/J2MGToczaYRd7tf.jpg" alt="Photo_shenzhen_230825-31_66.jpg"><br><img src="https://s2.loli.net/2023/09/12/eyC5YUcH6k1PIZG.jpg" alt="Photo_shenzhen_230825-31_72.jpg"><br><img src="https://s2.loli.net/2023/09/12/br8SKvah52DiNR1.jpg" alt="Photo_shenzhen_230825-31_64.jpg"><br><img src="https://s2.loli.net/2023/09/12/X3UKDglEqnLH8Gx.jpg" alt="Photo_shenzhen_230825-31_78.jpg"><br><img src="https://s2.loli.net/2023/09/12/QT6yNRlOzUaDJYn.jpg" alt="Photo_shenzhen_230825-31_62.jpg"><br><img src="https://s2.loli.net/2023/09/12/9PwtcAHVD4Frev1.jpg" alt="Photo_shenzhen_230825-31_75.jpg"><br><img src="https://s2.loli.net/2023/09/12/gPqKeHwmEofBks3.jpg" alt="Photo_shenzhen_230825-31_65.jpg"><br><img src="https://s2.loli.net/2023/09/12/b2jwSTPYsWoCaLn.jpg" alt="Photo_shenzhen_230825-31_77.jpg"><br><img src="https://s2.loli.net/2023/09/12/gCH2Ak9TFioupSE.jpg" alt="Photo_shenzhen_230825-31_76.jpg"><br><img src="https://s2.loli.net/2023/09/12/JFNnOdUalEHAvBR.jpg" alt="Photo_shenzhen_230825-31_87.jpg"><br><img src="https://s2.loli.net/2023/09/12/RgzPiMjHhk85mSb.jpg" alt="Photo_shenzhen_230825-31_91.jpg"><br><img src="https://s2.loli.net/2023/09/12/Ei6NmrIfz3eR4Xj.jpg" alt="Photo_shenzhen_230825-31_86.jpg"><br><img src="https://s2.loli.net/2023/09/12/okhR3pwDaV5lmtC.jpg" alt="Photo_shenzhen_230825-31_85.jpg"><br><img src="https://s2.loli.net/2023/09/12/CngvQqMu9H6lex4.jpg" alt="Photo_shenzhen_230825-31_94.jpg"><br><img src="https://s2.loli.net/2023/09/12/JScWR7PU63wZrnb.jpg" alt="Photo_shenzhen_230825-31_79.jpg"><br><img src="https://s2.loli.net/2023/09/12/HuYjOwgAC3pZV76.jpg" alt="Photo_shenzhen_230825-31_89.jpg"><br><img src="https://s2.loli.net/2023/09/12/7QrXTva1MWbNLDS.jpg" alt="Photo_shenzhen_230825-31_83.jpg"><br><img src="https://s2.loli.net/2023/09/12/1kKfHEC9orPzlTs.jpg" alt="Photo_shenzhen_230825-31_81.jpg"><br><img src="https://s2.loli.net/2023/09/12/lwZCbveo8tjkI6i.jpg" alt="Photo_shenzhen_230825-31_90.jpg"><br><img src="https://s2.loli.net/2023/09/12/C7hQdKqzltn6LOA.jpg" alt="Photo_shenzhen_230825-31_101.jpg"><br><img src="https://s2.loli.net/2023/09/12/o6qg95xBh4bMGSP.jpg" alt="Photo_shenzhen_230825-31_98.jpg"><br><img src="https://s2.loli.net/2023/09/12/l9tHigdZafT1xLS.jpg" alt="Photo_shenzhen_230825-31_95.jpg"><br><img src="https://s2.loli.net/2023/09/12/TEJY51stkC7wygn.jpg" alt="Photo_shenzhen_230825-31_96.jpg"><br><img src="https://s2.loli.net/2023/09/12/74bQUiOKSC9Hkdy.jpg" alt="Photo_shenzhen_230825-31_100.jpg"><br><img src="https://s2.loli.net/2023/09/12/cqhQGuaelPSzb4T.jpg" alt="Photo_shenzhen_230825-31_99.jpg"><br><img src="https://s2.loli.net/2023/09/12/JYfVS1ap2gmwZyj.jpg" alt="Photo_shenzhen_230825-31_102.jpg"><br><img src="https://s2.loli.net/2023/09/12/nCqToGrMQXPJLyd.jpg" alt="Photo_shenzhen_230825-31_97.jpg"><br><img src="https://s2.loli.net/2023/09/12/fWDxF34lRihMsUv.jpg" alt="Photo_shenzhen_230825-31_107.jpg"><br><img src="https://s2.loli.net/2023/09/12/ZRLjJdeWN5XwIv6.jpg" alt="Photo_shenzhen_230825-31_103.jpg"><br><img src="https://s2.loli.net/2023/09/12/byPY8zx3XRVphTu.jpg" alt="Photo_shenzhen_230825-31_113.jpg"><br><img src="https://s2.loli.net/2023/09/12/3xbZ8fYtKeaHXcB.jpg" alt="Photo_shenzhen_230825-31_115.jpg"><br><img src="https://s2.loli.net/2023/09/12/swqYCOB4miVd9bK.jpg" alt="Photo_shenzhen_230825-31_116.jpg"><br><img src="https://s2.loli.net/2023/09/12/UQasTGVX5pCJfEj.jpg" alt="Photo_shenzhen_230825-31_117.jpg"><br><img src="https://s2.loli.net/2023/09/12/Axvn1JUqdsauE63.jpg" alt="Photo_shenzhen_230825-31_108.jpg"><br><img src="https://s2.loli.net/2023/09/12/Y7UPujAEmN4wfhk.jpg" alt="Photo_shenzhen_230825-31_114.jpg"><br><img src="https://s2.loli.net/2023/09/12/fAlpzjJtGTRc4Ku.jpg" alt="Photo_shenzhen_230825-31_109.jpg"><br><img src="https://s2.loli.net/2023/09/12/preqxTNytgWv3lX.jpg" alt="Photo_shenzhen_230825-31_111.jpg"><br><img src="https://s2.loli.net/2023/09/12/Ym9UZ5IuWnrkOdq.jpg" alt="Photo_shenzhen_230825-31_118.jpg"><br><img src="https://s2.loli.net/2023/09/12/RF85QyYsBH6DO7d.jpg" alt="Photo_shenzhen_230825-31_110.jpg"><br><img src="https://s2.loli.net/2023/09/12/Re84monNhC1GLiD.jpg" alt="Photo_shenzhen_230825-31_121.jpg"><br><img src="https://s2.loli.net/2023/09/12/fcgCEX2GnhD1ApZ.jpg" alt="Photo_shenzhen_230825-31_120.jpg"><br><img src="https://s2.loli.net/2023/09/12/SuChF1B2LRYedTG.jpg" alt="Photo_shenzhen_230825-31_119.jpg"><br><img src="https://s2.loli.net/2023/09/12/74grdP1DmXbOAEu.jpg" alt="Photo_shenzhen_230825-31_122.jpg"><br><img src="https://s2.loli.net/2023/09/12/SqcguFK3DPTIsrv.jpg" alt="Photo_shenzhen_230825-31_125.jpg"><br><img src="https://s2.loli.net/2023/09/12/XAlRcSzwoyh7pxC.jpg" alt="Photo_shenzhen_230825-31_126.jpg"><br><img src="https://s2.loli.net/2023/09/12/RZgWzDx4M2XUlVv.jpg" alt="Photo_shenzhen_230825-31_124.jpg"><br><img src="https://s2.loli.net/2023/09/12/tHiAImFkqba6QVB.jpg" alt="Photo_shenzhen_230825-31_128.jpg"><br><img src="https://s2.loli.net/2023/09/12/Ie9REGufznkZK7F.jpg" alt="Photo_shenzhen_230825-31_127.jpg"><br><img src="https://s2.loli.net/2023/09/12/2lBawsAFYbzCgnm.jpg" alt="Photo_shenzhen_230825-31_123.jpg"><br><img src="https://s2.loli.net/2023/09/12/vtyMuGPDo7x8bAl.jpg" alt="Photo_shenzhen_230825-31_142.jpg"><br><img src="https://s2.loli.net/2023/09/12/r4P5Q79bMoGjBNJ.jpg" alt="Photo_shenzhen_230825-31_132.jpg"><br><img src="https://s2.loli.net/2023/09/12/CmtNyZ8BxPQLWhF.jpg" alt="Photo_shenzhen_230825-31_129.jpg"><br><img src="https://s2.loli.net/2023/09/12/yavhZt3eqoRicDd.jpg" alt="Photo_shenzhen_230825-31_147.jpg"><br><img src="https://s2.loli.net/2023/09/12/7fOx53SPdDpailW.jpg" alt="Photo_shenzhen_230825-31_135.jpg"><br><img src="https://s2.loli.net/2023/09/12/okv1q2d3fANrRTh.jpg" alt="Photo_shenzhen_230825-31_131.jpg"><br><img src="https://s2.loli.net/2023/09/12/csAF8vIRogUqyQb.jpg" alt="Photo_shenzhen_230825-31_146.jpg"><br><img src="https://s2.loli.net/2023/09/12/ohMki7n34fRFlvS.jpg" alt="Photo_shenzhen_230825-31_134.jpg"><br><img src="https://s2.loli.net/2023/09/12/ohE9ZWRrHde7F1J.jpg" alt="Photo_shenzhen_230825-31_130.jpg"><br><img src="https://s2.loli.net/2023/09/12/x598HOcznYtaUEf.jpg" alt="Photo_shenzhen_230825-31_133.jpg"><br><img src="https://s2.loli.net/2023/09/12/Th1amCEWXMSpbt8.jpg" alt="Photo_shenzhen_230825-31_152.jpg"><br><img src="https://s2.loli.net/2023/09/12/ofPuj8xtIk9gehp.jpg" alt="Photo_shenzhen_230825-31_161.jpg"><br><img src="https://s2.loli.net/2023/09/12/4RkzGXuqi2a9mdw.jpg" alt="Photo_shenzhen_230825-31_148.jpg"><br><img src="https://s2.loli.net/2023/09/12/eiDYXFgonzLPtuZ.jpg" alt="Photo_shenzhen_230825-31_158.jpg"><br><img src="https://s2.loli.net/2023/09/12/CactbrOUT1nY8IJ.jpg" alt="Photo_shenzhen_230825-31_166.jpg"><br><img src="https://s2.loli.net/2023/09/12/B3MIRdYcKjTglzF.jpg" alt="Photo_shenzhen_230825-31_165.jpg"><br><img src="https://s2.loli.net/2023/09/12/WIufVs91JL5aCSx.jpg" alt="Photo_shenzhen_230825-31_151.jpg"><br><img src="https://s2.loli.net/2023/09/12/QvyxIO3XSeLKf5R.jpg" alt="Photo_shenzhen_230825-31_163.jpg"><br><img src="https://s2.loli.net/2023/09/12/eYZyFNfaPKM26X5.jpg" alt="Photo_shenzhen_230825-31_153.jpg"><br><img src="https://s2.loli.net/2023/09/12/FQ7EAlkmVYvjw8s.jpg" alt="Photo_shenzhen_230825-31_156.jpg"><br><img src="https://s2.loli.net/2023/09/12/zjp8oxtKyHU7bD9.jpg" alt="Photo_shenzhen_230825-31_179.jpg"><br><img src="https://s2.loli.net/2023/09/12/VSI3dGkOLlRmj2y.jpg" alt="Photo_shenzhen_230825-31_181.jpg"><br><img src="https://s2.loli.net/2023/09/12/td9QOEkwpSh4lxm.jpg" alt="Photo_shenzhen_230825-31_189.jpg"><br><img src="https://s2.loli.net/2023/09/12/CIBy2ajAcxvdpLw.jpg" alt="Photo_shenzhen_230825-31_190.jpg"><br><img src="https://s2.loli.net/2023/09/12/byikCI8LFjStrvN.jpg" alt="Photo_shenzhen_230825-31_168.jpg"><br><img src="https://s2.loli.net/2023/09/12/en8mIGRTj7ZLvrD.jpg" alt="Photo_shenzhen_230825-31_186.jpg"><br><img src="https://s2.loli.net/2023/09/12/1cQY9kaqKCrFxgU.jpg" alt="Photo_shenzhen_230825-31_191.jpg"><br><img src="https://s2.loli.net/2023/09/12/uXCKnDaRfS9VlNt.jpg" alt="Photo_shenzhen_230825-31_180.jpg"><br><img src="https://s2.loli.net/2023/09/12/aUnzeH5yW8tuZ6I.jpg" alt="Photo_shenzhen_230825-31_193.jpg"><br><img src="https://s2.loli.net/2023/09/12/Q3UZ6BLI1HxJVrP.jpg" alt="Photo_shenzhen_230825-31_192.jpg"><br><img src="https://s2.loli.net/2023/09/12/4JIa9A2tlqHir8N.jpg" alt="Photo_shenzhen_230825-31_220.jpg"><br><img src="https://s2.loli.net/2023/09/12/o5SI7M9L24lnmdb.jpg" alt="Photo_shenzhen_230825-31_217.jpg"><br><img src="https://s2.loli.net/2023/09/12/3NBM1XJATawnzKU.jpg" alt="Photo_shenzhen_230825-31_225.jpg"><br><img src="https://s2.loli.net/2023/09/12/HkQ9OhKUfGm7axR.jpg" alt="Photo_shenzhen_230825-31_212.jpg"><br><img src="https://s2.loli.net/2023/09/12/C3PthxqrUfBdjkG.jpg" alt="Photo_shenzhen_230825-31_203.jpg"><br><img src="https://s2.loli.net/2023/09/12/gCbaZXVloAjm5dt.jpg" alt="Photo_shenzhen_230825-31_222.jpg"><br><img src="https://s2.loli.net/2023/09/12/kXBApd4am2zoHbF.jpg" alt="Photo_shenzhen_230825-31_223.jpg"><br><img src="https://s2.loli.net/2023/09/12/pxhvBPbJt7drZXs.jpg" alt="Photo_shenzhen_230825-31_198.jpg"><br><img src="https://s2.loli.net/2023/09/12/3OsoUvfzAEcHbNZ.jpg" alt="Photo_shenzhen_230825-31_209.jpg"><br><img src="https://s2.loli.net/2023/09/12/LigHv9CPxJUcBE5.jpg" alt="Photo_shenzhen_230825-31_202.jpg"><br><img src="https://s2.loli.net/2023/09/12/fuzKTlJw2qGNAj3.jpg" alt="Photo_shenzhen_230825-31_230.jpg"><br><img src="https://s2.loli.net/2023/09/12/WJRKtmT7i2Xxy4H.jpg" alt="Photo_shenzhen_230825-31_232.jpg"><br><img src="https://s2.loli.net/2023/09/12/a1VLjTzCDKx4tw6.jpg" alt="Photo_shenzhen_230825-31_248.jpg"><br><img src="https://s2.loli.net/2023/09/12/bCQEdRXjSx3swKy.jpg" alt="Photo_shenzhen_230825-31_251.jpg"><br><img src="https://s2.loli.net/2023/09/12/icpmE6FeaqQZ4Cd.jpg" alt="Photo_shenzhen_230825-31_241.jpg"><br><img src="https://s2.loli.net/2023/09/12/TmoDe9N5Fkq7yJh.jpg" alt="Photo_shenzhen_230825-31_226.jpg"><br><img src="https://s2.loli.net/2023/09/12/ZomG4btkTeyu8CQ.jpg" alt="Photo_shenzhen_230825-31_227.jpg"><br><img src="https://s2.loli.net/2023/09/12/FdIBK1ikjavCVzl.jpg" alt="Photo_shenzhen_230825-31_247.jpg"><br><img src="https://s2.loli.net/2023/09/12/fN4u6plO8MYTcRX.jpg" alt="Photo_shenzhen_230825-31_246.jpg"><br><img src="https://s2.loli.net/2023/09/12/1am4F6uzor2Rtxj.jpg" alt="Photo_shenzhen_230825-31_250.jpg"><br><img src="https://s2.loli.net/2023/09/12/6X5Ehl7o2ysIgBp.jpg" alt="Photo_shenzhen_230825-31_266.jpg"><br><img src="https://s2.loli.net/2023/09/12/4PlmZrTXzevanhY.jpg" alt="Photo_shenzhen_230825-31_268.jpg"><br><img src="https://s2.loli.net/2023/09/12/bzrEItHQCP9RwWK.jpg" alt="Photo_shenzhen_230825-31_265.jpg"><br><img src="https://s2.loli.net/2023/09/12/bnhvic2FTNudYpL.jpg" alt="Photo_shenzhen_230825-31_259.jpg"><br><img src="https://s2.loli.net/2023/09/12/ZApWuRhMY6GtLys.jpg" alt="Photo_shenzhen_230825-31_264.jpg"><br><img src="https://s2.loli.net/2023/09/12/juNBmDSlp2HaCnx.jpg" alt="Photo_shenzhen_230825-31_263.jpg"><br><img src="https://s2.loli.net/2023/09/12/nBgGyszXQEi9hvD.jpg" alt="Photo_shenzhen_230825-31_262.jpg"><br><img src="https://s2.loli.net/2023/09/12/R3h7HfcdAqLuwzF.jpg" alt="Photo_shenzhen_230825-31_261.jpg"><br><img src="https://s2.loli.net/2023/09/12/4FQdp5Jmq23Pnfc.jpg" alt="Photo_shenzhen_230825-31_270.jpg"><br><img src="https://s2.loli.net/2023/09/12/OqCte479sIwfmJg.jpg" alt="Photo_shenzhen_230825-31_260.jpg"><br><img src="https://s2.loli.net/2023/09/12/tmcVRl7eGZqAdsL.jpg" alt="Photo_shenzhen_230825-31_279.jpg"><br><img src="https://s2.loli.net/2023/09/12/6jnu5LZlIbqVYPW.jpg" alt="Photo_shenzhen_230825-31_277.jpg"><br><img src="https://s2.loli.net/2023/09/12/eq2sdG3i5SwY19z.jpg" alt="Photo_shenzhen_230825-31_281.jpg"><br><img src="https://s2.loli.net/2023/09/12/b3MinUTtZ96gBks.jpg" alt="Photo_shenzhen_230825-31_284.jpg"><br><img src="https://s2.loli.net/2023/09/12/CxOP137kLnJc8jW.jpg" alt="Photo_shenzhen_230825-31_274.jpg"><br><img src="https://s2.loli.net/2023/09/12/nWpxuzeFEV1g85c.jpg" alt="Photo_shenzhen_230825-31_280.jpg"><br><img src="https://s2.loli.net/2023/09/12/EOU2eFLTf8CJjH9.jpg" alt="Photo_shenzhen_230825-31_282.jpg"><br><img src="https://s2.loli.net/2023/09/12/zr28369y5EjRiZ1.jpg" alt="Photo_shenzhen_230825-31_287.jpg"><br><img src="https://s2.loli.net/2023/09/12/EjH695zlNMFYWVw.jpg" alt="Photo_shenzhen_230825-31_288.jpg"><br><img src="https://s2.loli.net/2023/09/12/e9TiMOsl1WYrUZa.jpg" alt="Photo_shenzhen_230825-31_286.jpg"><br><img src="https://s2.loli.net/2023/09/12/yI9oD4NPp2tqxcm.jpg" alt="Photo_shenzhen_230825-31_294.jpg"><br><img src="https://s2.loli.net/2023/09/12/me2KDUNrW3HYn7R.jpg" alt="Photo_shenzhen_230825-31_298.jpg"><br><img src="https://s2.loli.net/2023/09/12/jz1lJ9QFnEIt6Lx.jpg" alt="Photo_shenzhen_230825-31_292.jpg"><br><img src="https://s2.loli.net/2023/09/12/oQekNsYAp1bzK2P.jpg" alt="Photo_shenzhen_230825-31_296.jpg"></p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+        <a href="/2024/01/22/Journal-16-Home-in-Snow/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
+          Journal 16| Home in Snow
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/2023/09/11/Journal-14-Rewind/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          Journal 14| Rewind
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+<script src="https://giscus.app/client.js"
+        data-repo="infine-zero/giscus"
+        data-repo-id="R_kgDOJXiISw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJXiIS84CV0ca"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </div>
+</section>
+
+  </main>
+  <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
+  <!-- busuanzi -->
+  
+
+  <!-- copyright -->
+  </div class>
+    <span>© 2022</span>
+    <iconify-icon width="18" icon="emojione-monotone:maple-leaf" ></iconify-icon>
+    <a href="https://github.com/xbmlz" target="_blank" rel="noopener noreferrer">xbmlz</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-2">
+    <span>Powered by</span>
+    <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank" rel="noopener noreferrer">Maple</a>
+  </div>
+
+</footer>
+<script>
+      var now = new Date(); 
+      function createtime() { 
+          var grt= new Date("03/12/2019 12:00:00");//此处修改你的建站时间或者网站上线时间 
+          now.setTime(now.getTime()+250); 
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+  setInterval("createtime()",250);
+  </script>
+  <iconify-icon class="fixed right-4 bottom-10 z-100 opacity-0" width="24" icon="ion:arrow-up-c" id="go-top"></iconify-icon>
+  
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+
+</body>
+
+</html>

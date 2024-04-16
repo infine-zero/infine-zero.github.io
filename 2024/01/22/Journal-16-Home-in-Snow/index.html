@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Infine">
+
+
+  <meta name="subtitle" content="infine_island：Welcome to wander. Comments are available here. Please use PC for best experience.">
+
+
+  <meta name="description" content="welcome to wander">
+
+
+
+<title>Journal 16| Home in Snow | INLAND</title>
+
+
+
+<link rel="icon" href="/logo.svg">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+
+
+<script src="/lib/nprogress/nprogress.js"></script>
+
+<script>
+  $(document).ready(() => {
+    NProgress.configure({
+      showSpinner: false,
+    });
+    NProgress.start();
+    $("#nprogress .bar").css({
+      background: "#de7441",
+    });
+    $("#nprogress .peg").css({
+      "box-shadow": "0 0 2px #de7441, 0 0 4px #de7441",
+    });
+    $("#nprogress .spinner-icon").css({
+      "border-top-color": "#de7441",
+      "border-left-color": "#de7441",
+    });
+    setTimeout(function () {
+      NProgress.done();
+      $(".fade").removeClass("out");
+    }, 800);
+  });
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+  })();
+  window.onload = function () {
+    // init iconify icon
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
+      $("#toggle-dark").attr("icon", "ri:moon-line");
+    } else {
+      $("#toggle-dark").attr("icon", "ri:sun-line");
+    }
+
+    const toggleDark = () => {
+      console.log("toggle dark");
+      const darkMode = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("hexo-color-scheme", darkMode ? "dark" : "light");
+      $("#toggle-dark").attr("icon", darkMode ? "ri:moon-line" : "ri:sun-line");
+    };
+
+    $("#toggle-dark").click(toggleDark);
+  };
+</script>
+
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="INLAND" type="application/atom+xml">
+</head>
+<body class="font-sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200">
+  <header class="fixed w-full px-5 py-1 z-10 backdrop-blur-xl backdrop-saturate-150 border-b border-black/5">
+  <div class="max-auto">
+    <nav class="flex items-center text-base">
+      <a href="/" class="group">
+        <h2 class="font-medium tracking-tighterp text-l p-2">
+          <img class="w-5 mr-2 inline-block transition-transform group-hover:rotate-[30deg]" src="/logo.svg" alt="INLAND" />
+          INLAND
+        </h2>
+      </a>
+      <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        about
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-2">
+        
+          <a class="hidden sm:flex" href="/category">Categories</a>
+        
+          <a class="hidden sm:flex" href="/about">About</a>
+        
+        
+          
+            <a class="w-5 h-5 hidden sm:flex" title="Bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/10838981">
+              <iconify-icon width="20" icon="ri:bilibili-line"></iconify-icon>
+            </a>
+          
+        
+        <a class="w-5 h-5" title="toggle theme">
+          <iconify-icon width="20" icon="ri:sun-line" id="toggle-dark"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 ml-3 sm:hidden">
+        <span class="w-5 h-5" aria-hidden="true" role="img" id="open-menu">
+          <iconify-icon width="20" icon="carbon:menu" ></iconify-icon>
+        </span>
+        <span class="w-5 h-5 hidden" aria-hidden="true" role="img" id="close-menu">
+          <iconify-icon  width="20" icon="carbon:close" ></iconify-icon>
+        </span>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="menu-panel" class="h-0 overflow-hidden sm:hidden fixed left-0 right-0 top-12 bottom-0 z-10">
+  <div id="menu-content" class="relative z-20 bg-white/80 px-6 sm:px-8 py-2 backdrop-blur-xl -translate-y-full transition-transform duration-300">
+    <ul class="nav flex flex-col sm:flex-row text-sm font-medium">
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/category" class="flex h-12 sm:h-auto items-center">Categories</a>
+        </li>
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/about" class="flex h-12 sm:h-auto items-center">About</a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="mask bg-black/20 absolute inset-0"></div>
+</div>
+
+  <main class="p-6">
+    <!-- toc -->
+
+<section class="px-0 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        Journal 16| Home in Snow
+      </h1>
+      <p class="mb-6">
+        
+      </p>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <time>2024-01-22 22:36:33</time>
+          <span class="text-gray-400">·</span>
+          <span>1 min</span>
+          <span class="text-gray-400">·</span>
+          <span>0 words</span>
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content mt-10 prose dark:prose-invert post-content">
+    <p><img src="https://s2.loli.net/2024/01/22/JGOahzNvs6PUmnc.jpg" alt="Photo_home-snow_240122_004.jpg"><br><img src="https://s2.loli.net/2024/01/22/vxVP8bSsRO3ro19.jpg" alt="Photo_home-snow_240122_003.jpg"><br><img src="https://s2.loli.net/2024/01/22/UWOF3kJcKiqmQ7P.jpg" alt="Photo_home-snow_240122_007.jpg"><br><img src="https://s2.loli.net/2024/01/22/o8TnlXrKDObzYLB.jpg" alt="Photo_home-snow_240122_006.jpg"><br><img src="https://s2.loli.net/2024/01/22/daBzJqtAwxoSFvb.jpg" alt="Photo_home-snow_240122_005.jpg"><br><img src="https://s2.loli.net/2024/01/22/W1fdeMgc3a9Il6Q.jpg" alt="Photo_home-snow_240122_002.jpg"><br><img src="https://s2.loli.net/2024/01/22/Z47H8R5enKU9EJO.jpg" alt="Photo_home-snow_240122_008.jpg"><br><img src="https://s2.loli.net/2024/01/22/MiO7UmhCauy4AR3.jpg" alt="Photo_home-snow_240122_001.jpg"><br><img src="https://s2.loli.net/2024/01/22/A8BMjVNz7anwiYI.jpg" alt="Photo_home-snow_240122_013.jpg"><br><img src="https://s2.loli.net/2024/01/22/njTvYpt7Vu8yDwa.jpg" alt="Photo_home-snow_240122_014.jpg"><br><img src="https://s2.loli.net/2024/01/22/xtYn8W2IuayOE95.jpg" alt="Photo_home-snow_240122_016.jpg"><br><img src="https://s2.loli.net/2024/01/22/DObAPMKmk2FnpUz.jpg" alt="Photo_home-snow_240122_012.jpg"><br><img src="https://s2.loli.net/2024/01/22/HE3zAht7SpyfZ2m.jpg" alt="Photo_home-snow_240122_022.jpg"><br><img src="https://s2.loli.net/2024/01/22/QE365w9ciqCWlJN.jpg" alt="Photo_home-snow_240122_021.jpg"><br><img src="https://s2.loli.net/2024/01/22/CecoWfhaTXd5R3s.jpg" alt="Photo_home-snow_240122_019.jpg"><br><img src="https://s2.loli.net/2024/01/22/nS3Q6mzHchUqyM2.jpg" alt="Photo_home-snow_240122_020.jpg"><br><img src="https://s2.loli.net/2024/01/22/cVaD6EtPvrHUyk9.jpg" alt="Photo_home-snow_240122_024.jpg"><br><img src="https://s2.loli.net/2024/01/22/UcpfPavsiuR2Vwd.jpg" alt="Photo_home-snow_240122_025.jpg"><br><img src="https://s2.loli.net/2024/01/22/FStqRzON9yGs6Wm.jpg" alt="Photo_home-snow_240122_035.jpg"><br><img src="https://s2.loli.net/2024/01/22/oC7daf5IATNKcrR.jpg" alt="Photo_home-snow_240122_034.jpg"><br><img src="https://s2.loli.net/2024/01/22/MRKL9QgxPwYc5eX.jpg" alt="Photo_home-snow_240122_030.jpg"><br><img src="https://s2.loli.net/2024/01/22/EUAXKhdsBte38Ir.jpg" alt="Photo_home-snow_240122_033.jpg"><br><img src="https://s2.loli.net/2024/01/22/TIb8SqeFmitWrLG.jpg" alt="Photo_home-snow_240122_046.jpg"><br><img src="https://s2.loli.net/2024/01/22/NaTsA7PI8d2ShGk.jpg" alt="Photo_home-snow_240122_053.jpg"><br><img src="https://s2.loli.net/2024/01/22/dPKxRZDJg6Qar1k.jpg" alt="Photo_home-snow_240122_047.jpg"><br><img src="https://s2.loli.net/2024/01/22/Q4zock1pIwmFqlT.jpg" alt="Photo_home-snow_240122_048.jpg"><br><img src="https://s2.loli.net/2024/01/22/3Ep9Irt6hiBkxgK.jpg" alt="Photo_home-snow_240122_050.jpg"><br><img src="https://s2.loli.net/2024/01/22/obfuHvYqj6Di38m.jpg" alt="Photo_home-snow_240122_054.jpg"><br><img src="https://s2.loli.net/2024/01/22/1n7joQyt9YVGcdP.jpg" alt="Photo_home-snow_240122_055.jpg"><br><img src="https://s2.loli.net/2024/01/22/dAW3hQC8a4yORLZ.jpg" alt="Photo_home-snow_240122_051.jpg"><br><img src="https://s2.loli.net/2024/01/22/RwgSIBjL4Thv92U.jpg" alt="Photo_home-snow_240122_056.jpg"><br><img src="https://s2.loli.net/2024/01/22/njLmKXU2SZOa8c1.jpg" alt="Photo_home-snow_240122_057.jpg"><br><img src="https://s2.loli.net/2024/01/22/Wp3R9J1zBUXsvhd.jpg" alt="Photo_home-snow_240122_064.jpg"><br><img src="https://s2.loli.net/2024/01/22/rUiuVD5sOmK7Qbz.jpg" alt="Photo_home-snow_240122_061.jpg"><br><img src="https://s2.loli.net/2024/01/22/6iQKJDpWYVflMGt.jpg" alt="Photo_home-snow_240122_058.jpg"><br><img src="https://s2.loli.net/2024/01/22/YZk59fFCanyI1JX.jpg" alt="Photo_home-snow_240122_062.jpg"><br><img src="https://s2.loli.net/2024/01/22/MXf1G3BD7lKUEzL.jpg" alt="Photo_home-snow_240122_060.jpg"><br><img src="https://s2.loli.net/2024/01/22/TSxarmBidPwH73Y.jpg" alt="Photo_home-snow_240122_076.jpg"><br><img src="https://s2.loli.net/2024/01/22/A5p8WNXjeOiPH46.jpg" alt="Photo_home-snow_240122_074.jpg"><br><img src="https://s2.loli.net/2024/01/22/IvHZ1DrAuR4N3nY.jpg" alt="Photo_home-snow_240122_067.jpg"><br><img src="https://s2.loli.net/2024/01/22/2ko6dfFgwnMcT3A.jpg" alt="Photo_home-snow_240122_009.jpg"><br><img src="https://s2.loli.net/2024/01/22/hPIdZiMKXNw17tc.jpg" alt="Photo_home-snow_240122_018.jpg"><br><img src="https://s2.loli.net/2024/01/22/StDg7JWENHVyXdl.jpg" alt="Photo_home-snow_240122_031.jpg"><br><img src="https://s2.loli.net/2024/01/22/8ZaMvNegkiOz47w.jpg" alt="Photo_home-snow_240122_010.jpg"><br><img src="https://s2.loli.net/2024/01/22/x5pjaYVoXGChzLg.jpg" alt="Photo_home-snow_240122_023.jpg"><br><img src="https://s2.loli.net/2024/01/22/lhjFgJZDveGsw7X.jpg" alt="Photo_home-snow_240122_011.jpg"><br><img src="https://s2.loli.net/2024/01/22/OGxUXJ3yvEfp8KQ.jpg" alt="Photo_home-snow_240122_028.jpg"><br><img src="https://s2.loli.net/2024/01/22/4uNJVC79bYxXoj8.jpg" alt="Photo_home-snow_240122_036.jpg"><br><img src="https://s2.loli.net/2024/01/22/axTNfZzbHLoBO9U.jpg" alt="Photo_home-snow_240122_061.jpg"><br><img src="https://s2.loli.net/2024/01/22/wNjx9ecbR32GIpm.jpg" alt="Photo_home-snow_240122_049.jpg"><br><img src="https://s2.loli.net/2024/01/22/P9yzC8RsLriZFKn.jpg" alt="Photo_home-snow_240122_041.jpg"><br><img src="https://s2.loli.net/2024/01/22/T7XoUHdjQIZNg5k.jpg" alt="Photo_home-snow_240122_044.jpg"><br><img src="https://s2.loli.net/2024/01/22/S2bdfZK1kmIjTiH.jpg" alt="Photo_home-snow_240122_010.jpg"><br><img src="https://s2.loli.net/2024/01/22/VTro1JjwR9PSgKs.jpg" alt="Photo_home-snow_240122_023.jpg"><br><img src="https://s2.loli.net/2024/01/22/ac5z6ym41qPSIDe.jpg" alt="Photo_home-snow_240122_028.jpg"><br><img src="https://s2.loli.net/2024/01/22/FLGgmN9fZ2CB3Tu.jpg" alt="Photo_home-snow_240122_009.jpg"><br><img src="https://s2.loli.net/2024/01/22/oziQpdeHF9y7OKT.jpg" alt="Photo_home-snow_240122_018.jpg"><br><img src="https://s2.loli.net/2024/01/22/fmuWSaT7cIseyQq.jpg" alt="Photo_home-snow_240122_011.jpg"><br><img src="https://s2.loli.net/2024/01/22/g3qRa5NOcuVm81z.jpg" alt="Photo_home-snow_240122_031.jpg"><br><img src="https://s2.loli.net/2024/01/22/PpV9rN6InYsi1uB.jpg" alt="Photo_home-snow_240122_039_1.jpg"><br><img src="https://s2.loli.net/2024/01/22/6HRlxnDucXasNVj.jpg" alt="Photo_home-snow_240122_042_1.jpg"><br><img src="https://s2.loli.net/2024/01/22/WxnS8fZIXoh1cA5.jpg" alt="Photo_home-snow_240122_017_1.jpg"><br><img src="https://s2.loli.net/2024/01/22/qvQxnWtcUj3DmFz.jpg" alt="Photo_home-snow_240122_065_1.jpg"><br><img src="https://s2.loli.net/2024/01/22/5VeH4LhIt6vPyMG.jpg" alt="Photo_home-snow_240122_063_1.jpg"><br><img src="https://s2.loli.net/2024/01/22/gNjUO3CEhyzwx8f.jpg" alt="Photo_home-snow_240122_018.jpg"><br><img src="https://s2.loli.net/2024/01/22/Oc4PenW2tqjFvUK.jpg" alt="Photo_home-snow_240122_043_1.jpg"><br><img src="https://s2.loli.net/2024/01/22/WdzOjpTlkJcvImo.jpg" alt="Photo_home-snow_240122_026_1.jpg"><br><img src="https://s2.loli.net/2024/01/22/phcq4XkduCMwy35.jpg" alt="Photo_home-snow_240122_040_1.jpg"><br><img src="https://s2.loli.net/2024/01/22/oBkGh7SUwu8C1nF.jpg" alt="Photo_home-snow_240122_010.jpg"><br><img src="https://s2.loli.net/2024/01/22/CskNwWjZlzdRenP.jpg" alt="Photo_home-snow_240122_011.jpg"></p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/winter/">winter</a>
+        </span>
+      
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+        <a href="/2024/01/24/Journal-17-Snowy-sun/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
+          Journal 17| Snowy sun
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/2023/09/12/Journal-15-Shenzhen/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          Journal 15| Shenzhen
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+<script src="https://giscus.app/client.js"
+        data-repo="infine-zero/giscus"
+        data-repo-id="R_kgDOJXiISw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJXiIS84CV0ca"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </div>
+</section>
+
+  </main>
+  <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
+  <!-- busuanzi -->
+  
+
+  <!-- copyright -->
+  </div class>
+    <span>© 2022</span>
+    <iconify-icon width="18" icon="emojione-monotone:maple-leaf" ></iconify-icon>
+    <a href="https://github.com/xbmlz" target="_blank" rel="noopener noreferrer">xbmlz</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-2">
+    <span>Powered by</span>
+    <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank" rel="noopener noreferrer">Maple</a>
+  </div>
+
+</footer>
+<script>
+      var now = new Date(); 
+      function createtime() { 
+          var grt= new Date("03/12/2019 12:00:00");//此处修改你的建站时间或者网站上线时间 
+          now.setTime(now.getTime()+250); 
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+  setInterval("createtime()",250);
+  </script>
+  <iconify-icon class="fixed right-4 bottom-10 z-100 opacity-0" width="24" icon="ion:arrow-up-c" id="go-top"></iconify-icon>
+  
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+
+</body>
+
+</html>

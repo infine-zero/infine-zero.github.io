@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Infine">
+
+
+  <meta name="subtitle" content="infine_island：Welcome to wander. Comments are available here. Please use PC for best experience.">
+
+
+  <meta name="description" content="welcome to wander">
+
+
+
+<title>Journal 17| Snowy sun | INLAND</title>
+
+
+
+<link rel="icon" href="/logo.svg">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+
+
+<script src="/lib/nprogress/nprogress.js"></script>
+
+<script>
+  $(document).ready(() => {
+    NProgress.configure({
+      showSpinner: false,
+    });
+    NProgress.start();
+    $("#nprogress .bar").css({
+      background: "#de7441",
+    });
+    $("#nprogress .peg").css({
+      "box-shadow": "0 0 2px #de7441, 0 0 4px #de7441",
+    });
+    $("#nprogress .spinner-icon").css({
+      "border-top-color": "#de7441",
+      "border-left-color": "#de7441",
+    });
+    setTimeout(function () {
+      NProgress.done();
+      $(".fade").removeClass("out");
+    }, 800);
+  });
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+  })();
+  window.onload = function () {
+    // init iconify icon
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
+      $("#toggle-dark").attr("icon", "ri:moon-line");
+    } else {
+      $("#toggle-dark").attr("icon", "ri:sun-line");
+    }
+
+    const toggleDark = () => {
+      console.log("toggle dark");
+      const darkMode = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("hexo-color-scheme", darkMode ? "dark" : "light");
+      $("#toggle-dark").attr("icon", darkMode ? "ri:moon-line" : "ri:sun-line");
+    };
+
+    $("#toggle-dark").click(toggleDark);
+  };
+</script>
+
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="INLAND" type="application/atom+xml">
+</head>
+<body class="font-sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200">
+  <header class="fixed w-full px-5 py-1 z-10 backdrop-blur-xl backdrop-saturate-150 border-b border-black/5">
+  <div class="max-auto">
+    <nav class="flex items-center text-base">
+      <a href="/" class="group">
+        <h2 class="font-medium tracking-tighterp text-l p-2">
+          <img class="w-5 mr-2 inline-block transition-transform group-hover:rotate-[30deg]" src="/logo.svg" alt="INLAND" />
+          INLAND
+        </h2>
+      </a>
+      <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        about
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-2">
+        
+          <a class="hidden sm:flex" href="/category">Categories</a>
+        
+          <a class="hidden sm:flex" href="/about">About</a>
+        
+        
+          
+            <a class="w-5 h-5 hidden sm:flex" title="Bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/10838981">
+              <iconify-icon width="20" icon="ri:bilibili-line"></iconify-icon>
+            </a>
+          
+        
+        <a class="w-5 h-5" title="toggle theme">
+          <iconify-icon width="20" icon="ri:sun-line" id="toggle-dark"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 ml-3 sm:hidden">
+        <span class="w-5 h-5" aria-hidden="true" role="img" id="open-menu">
+          <iconify-icon width="20" icon="carbon:menu" ></iconify-icon>
+        </span>
+        <span class="w-5 h-5 hidden" aria-hidden="true" role="img" id="close-menu">
+          <iconify-icon  width="20" icon="carbon:close" ></iconify-icon>
+        </span>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="menu-panel" class="h-0 overflow-hidden sm:hidden fixed left-0 right-0 top-12 bottom-0 z-10">
+  <div id="menu-content" class="relative z-20 bg-white/80 px-6 sm:px-8 py-2 backdrop-blur-xl -translate-y-full transition-transform duration-300">
+    <ul class="nav flex flex-col sm:flex-row text-sm font-medium">
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/category" class="flex h-12 sm:h-auto items-center">Categories</a>
+        </li>
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/about" class="flex h-12 sm:h-auto items-center">About</a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="mask bg-black/20 absolute inset-0"></div>
+</div>
+
+  <main class="p-6">
+    <!-- toc -->
+
+<section class="px-0 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        Journal 17| Snowy sun
+      </h1>
+      <p class="mb-6">
+        
+      </p>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <time>2024-01-24 18:06:21</time>
+          <span class="text-gray-400">·</span>
+          <span>1 min</span>
+          <span class="text-gray-400">·</span>
+          <span>0 words</span>
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content mt-10 prose dark:prose-invert post-content">
+    <p><img src="https://s2.loli.net/2024/01/24/ZOE4rQAinbK5LTJ.jpg" alt="Photo_home-snow_240123010.jpg"><br><img src="https://s2.loli.net/2024/01/24/IutUeLjlHzrOoi8.jpg" alt="Photo_home-snow_240123001.jpg"><br><img src="https://s2.loli.net/2024/01/24/bDrhY2sEeUPFC1T.jpg" alt="Photo_home-snow_240123009.jpg"><br><img src="https://s2.loli.net/2024/01/24/RJ97ZBUogenNurh.jpg" alt="Photo_home-snow_240123002.jpg"><br><img src="https://s2.loli.net/2024/01/24/xIpjam6d9eBWJfr.jpg" alt="Photo_home-snow_240123003.jpg"><br><img src="https://s2.loli.net/2024/01/24/zSd7nX2ArEZ89vK.jpg" alt="Photo_home-snow_240123004.jpg"><br><img src="https://s2.loli.net/2024/01/24/SpUfROL9rdM3cKH.jpg" alt="Photo_home-snow_240123007.jpg"><br><img src="https://s2.loli.net/2024/01/24/HVxpaQA97e1iBNz.jpg" alt="Photo_home-snow_240123006.jpg"><br><img src="https://s2.loli.net/2024/01/24/OFiha5RgfDJeGVb.jpg" alt="Photo_home-snow_240123005.jpg"><br><img src="https://s2.loli.net/2024/01/24/9iBwKbPGcA2hrmz.jpg" alt="Photo_home-snow_240123008.jpg"><br><img src="https://s2.loli.net/2024/01/24/w4VUP1ycxJiXN8S.jpg" alt="Photo_home-snow_240123021.jpg"><br><img src="https://s2.loli.net/2024/01/24/CWjgBUFpfoxkzsY.jpg" alt="Photo_home-snow_240123020.jpg"><br><img src="https://s2.loli.net/2024/01/24/TcfLiZGVRXbpkm4.jpg" alt="Photo_home-snow_240123019.jpg"><br><img src="https://s2.loli.net/2024/01/24/TCnGdbpRgUKN4Qt.jpg" alt="Photo_home-snow_240123012.jpg"><br><img src="https://s2.loli.net/2024/01/24/opWT1f3v7q9jKbX.jpg" alt="Photo_home-snow_240123018.jpg"><br><img src="https://s2.loli.net/2024/01/24/I8KkHREhgCmjUGr.jpg" alt="Photo_home-snow_240123011.jpg"><br><img src="https://s2.loli.net/2024/01/24/nUxl4gvMPYfJEFW.jpg" alt="Photo_home-snow_240123015.jpg"><br><img src="https://s2.loli.net/2024/01/24/uB49iUfXeDQALFr.jpg" alt="Photo_home-snow_240123013.jpg"><br><img src="https://s2.loli.net/2024/01/24/9svXmA8CGyz6PgI.jpg" alt="Photo_home-snow_240123014.jpg"><br><img src="https://s2.loli.net/2024/01/24/tfNhH8FR5MscmkK.jpg" alt="Photo_home-snow_240123016.jpg"><br><img src="https://s2.loli.net/2024/01/24/xcSHp5IEaiCmJnj.jpg" alt="Photo_home-snow_240123024.jpg"><br><img src="https://s2.loli.net/2024/01/24/tlvC5G12H9NsYrU.jpg" alt="Photo_home-snow_240123027.jpg"><br><img src="https://s2.loli.net/2024/01/24/CHtDmSvdMeWAqcT.jpg" alt="Photo_home-snow_240123029.jpg"><br><img src="https://s2.loli.net/2024/01/24/iktdsAnW1QS3XMj.jpg" alt="Photo_home-snow_240123026.jpg"><br><img src="https://s2.loli.net/2024/01/24/mxHfuj7AaFXelYI.jpg" alt="Photo_home-snow_240123022.jpg"><br><img src="https://s2.loli.net/2024/01/24/Ilj7EKwvendSacG.jpg" alt="Photo_home-snow_240123030.jpg"><br><img src="https://s2.loli.net/2024/01/24/L1BxVw6QUfFPHDb.jpg" alt="Photo_home-snow_240123025.jpg"><br><img src="https://s2.loli.net/2024/01/24/wpgBMouCJ17k4df.jpg" alt="Photo_home-snow_240123031.jpg"><br><img src="https://s2.loli.net/2024/01/24/zQoj9fDReMg6cOV.jpg" alt="Photo_home-snow_240123028.jpg"><br><img src="https://s2.loli.net/2024/01/24/Tt5N7l4JGv81uHF.jpg" alt="Photo_home-snow_240123023.jpg"><br><img src="https://s2.loli.net/2024/01/24/afWUw1VKCbig8Fm.jpg" alt="Photo_home-snow_240123034.jpg"><br><img src="https://s2.loli.net/2024/01/24/aCjlGr9kH1gvu7m.jpg" alt="Photo_home-snow_240123035.jpg"><br><img src="https://s2.loli.net/2024/01/24/JbSNW7x1o2GXzmP.jpg" alt="Photo_home-snow_240123039.jpg"><br><img src="https://s2.loli.net/2024/01/24/nLkPtvFgq4DzQCU.jpg" alt="Photo_home-snow_240123033.jpg"><br><img src="https://s2.loli.net/2024/01/24/ZVsKkIMDnOqcgfd.jpg" alt="Photo_home-snow_240123032.jpg"><br><img src="https://s2.loli.net/2024/01/24/Sa4whCc1gJfiMQo.jpg" alt="Photo_home-snow_240123037.jpg"><br><img src="https://s2.loli.net/2024/01/24/BaLrY7xCdQuhWEX.jpg" alt="Photo_home-snow_240123038.jpg"><br><img src="https://s2.loli.net/2024/01/24/noU7t6I1xy3fK2k.jpg" alt="Photo_home-snow_240123036.jpg"><br><img src="https://s2.loli.net/2024/01/24/4dswlHvWYcpoziF.jpg" alt="Photo_home-snow_240123041.jpg"><br><img src="https://s2.loli.net/2024/01/24/Z1DkFnqd5fSxHK8.jpg" alt="Photo_home-snow_240123040.jpg"><br><img src="https://s2.loli.net/2024/01/24/7Ht16pLQ2GAueF8.jpg" alt="Photo_home-snow_240123048.jpg"><br><img src="https://s2.loli.net/2024/01/24/SdQkfcsPOGjDAC9.jpg" alt="Photo_home-snow_240123042.jpg"><br><img src="https://s2.loli.net/2024/01/24/zVAPg4XaK3Zwcdp.jpg" alt="Photo_home-snow_240123043.jpg"><br><img src="https://s2.loli.net/2024/01/24/vnbJZB527k1XWaf.jpg" alt="Photo_home-snow_240123045.jpg"><br><img src="https://s2.loli.net/2024/01/24/LuZo9MBCsbFaevn.jpg" alt="Photo_home-snow_240123046.jpg"><br><img src="https://s2.loli.net/2024/01/24/4iRfbWc198aLjrI.jpg" alt="Photo_home-snow_240123051.jpg"><br><img src="https://s2.loli.net/2024/01/24/hyoLjvb732RcSUT.jpg" alt="Photo_home-snow_240123052.jpg"><br><img src="https://s2.loli.net/2024/01/24/neWkvGO5x8TVhyH.jpg" alt="Photo_home-snow_240123044.jpg"><br><img src="https://s2.loli.net/2024/01/24/XPQIxW2lZtLa7HA.jpg" alt="Photo_home-snow_240123047.jpg"><br><img src="https://s2.loli.net/2024/01/24/w6f4tCpbz5ljZUQ.jpg" alt="Photo_home-snow_240123049.jpg"><br><img src="https://s2.loli.net/2024/01/24/AjPfrdEBz6eoXLa.jpg" alt="Photo_home-snow_240123057.jpg"><br><img src="https://s2.loli.net/2024/01/24/NO7JpzbhlukXPy4.jpg" alt="Photo_home-snow_240123056.jpg"><br><img src="https://s2.loli.net/2024/01/24/igYnmvpNOPXwsz8.jpg" alt="Photo_home-snow_240123054.jpg"><br><img src="https://s2.loli.net/2024/01/24/v8P42sgnLOBrxwu.jpg" alt="Photo_home-snow_240123062.jpg"><br><img src="https://s2.loli.net/2024/01/24/eOyS4wNQEa8idRF.jpg" alt="Photo_home-snow_240123060.jpg"><br><img src="https://s2.loli.net/2024/01/24/Z7UGOifQlCkXcAF.jpg" alt="Photo_home-snow_240123053.jpg"><br><img src="https://s2.loli.net/2024/01/24/7bIQWzvEU8l9L5C.jpg" alt="Photo_home-snow_240123055.jpg"><br><img src="https://s2.loli.net/2024/01/24/k5loXdGZ6shqTwU.jpg" alt="Photo_home-snow_240123059.jpg"><br><img src="https://s2.loli.net/2024/01/24/oj6tOqGCyegTbJc.jpg" alt="Photo_home-snow_240123058.jpg"><br><img src="https://s2.loli.net/2024/01/24/VXyJoaO92EArGjz.jpg" alt="Photo_home-snow_240123061.jpg"><br><img src="https://s2.loli.net/2024/01/24/YykIUbiRads4lX8.jpg" alt="Photo_home-snow_240123065.jpg"><br><img src="https://s2.loli.net/2024/01/24/OdonG14XCQ56MK7.jpg" alt="Photo_home-snow_240123068.jpg"><br><img src="https://s2.loli.net/2024/01/24/j5ItNZ9YEUL3qhJ.jpg" alt="Photo_home-snow_240123063.jpg"><br><img src="https://s2.loli.net/2024/01/24/dFvpcDqlB6VaZ8Q.jpg" alt="Photo_home-snow_240123066.jpg"><br><img src="https://s2.loli.net/2024/01/24/SGMWcvlmKaO9dIP.jpg" alt="Photo_home-snow_240123072.jpg"><br><img src="https://s2.loli.net/2024/01/24/gFp5WoMviUwEQrS.jpg" alt="Photo_home-snow_240123067.jpg"><br><img src="https://s2.loli.net/2024/01/24/icNDO4IjPl2MFKx.jpg" alt="Photo_home-snow_240123070.jpg"><br><img src="https://s2.loli.net/2024/01/24/I3BpbHDyTAoO4NC.jpg" alt="Photo_home-snow_240123064.jpg"><br><img src="https://s2.loli.net/2024/01/24/onPlZtKeV4Hx1k8.jpg" alt="Photo_home-snow_240123069.jpg"><br><img src="https://s2.loli.net/2024/01/24/qXgo2HfnLyOFuJe.jpg" alt="Photo_home-snow_240123071.jpg"><br><img src="https://s2.loli.net/2024/01/24/iwdy1BnC3ZmQpJD.jpg" alt="Photo_home-snow_240123076.jpg"><br><img src="https://s2.loli.net/2024/01/24/SdhECo56ru8AWIx.jpg" alt="Photo_home-snow_240123074.jpg"><br><img src="https://s2.loli.net/2024/01/24/UhVL3onYlFtR2pq.jpg" alt="Photo_home-snow_240123082.jpg"><br><img src="https://s2.loli.net/2024/01/24/i4FDvkVpmt1SWG9.jpg" alt="Photo_home-snow_240123075.jpg"><br><img src="https://s2.loli.net/2024/01/24/HBcgjZPE3XiqGyM.jpg" alt="Photo_home-snow_240123077.jpg"><br><img src="https://s2.loli.net/2024/01/24/XuaZlBP67dx8DYT.jpg" alt="Photo_home-snow_240123078.jpg"><br><img src="https://s2.loli.net/2024/01/24/ig9cOU6JazthZS2.jpg" alt="Photo_home-snow_240123079.jpg"><br><img src="https://s2.loli.net/2024/01/24/jCLVsb56Eg2rxGf.jpg" alt="Photo_home-snow_240123073.jpg"><br><img src="https://s2.loli.net/2024/01/24/GsX1NiYUlD3QCwE.jpg" alt="Photo_home-snow_240123081.jpg"><br><img src="https://s2.loli.net/2024/01/24/xgbdpoJO6aecjLr.jpg" alt="Photo_home-snow_240123080.jpg"><br><img src="https://s2.loli.net/2024/01/24/pCgX3Uxt6icIWHF.jpg" alt="Photo_home-snow_240123094.jpg"><br><img src="https://s2.loli.net/2024/01/24/vO1fbLK9xwlV3oM.jpg" alt="Photo_home-snow_240123085.jpg"><br><img src="https://s2.loli.net/2024/01/24/73vNfUzT4BKYcod.jpg" alt="Photo_home-snow_240123095.jpg"><br><img src="https://s2.loli.net/2024/01/24/NQfWqhEP2dxMvg1.jpg" alt="Photo_home-snow_240123086.jpg"><br><img src="https://s2.loli.net/2024/01/24/MaUwEt1v6Yso9BX.jpg" alt="Photo_home-snow_240123093.jpg"><br><img src="https://s2.loli.net/2024/01/24/pz6yDFBKEQG4XNL.jpg" alt="Photo_home-snow_240123090.jpg"><br><img src="https://s2.loli.net/2024/01/24/xGcvi41nufZ6Ol2.jpg" alt="Photo_home-snow_240123087.jpg"><br><img src="https://s2.loli.net/2024/01/24/HZYwjsvE65Kzi9T.jpg" alt="Photo_home-snow_240123092.jpg"><br><img src="https://s2.loli.net/2024/01/24/ImK6hZ15y8sTPRr.jpg" alt="Photo_home-snow_240123083.jpg"><br><img src="https://s2.loli.net/2024/01/24/X5VuSOb7DFPdLig.jpg" alt="Photo_home-snow_240123096.jpg"><br><img src="https://s2.loli.net/2024/01/24/8UeuHjaYkTxINVE.jpg" alt="Photo_home-snow_240123102.jpg"><br><img src="https://s2.loli.net/2024/01/24/zcqBTu1lDt2iNjr.jpg" alt="Photo_home-snow_240123098.jpg"><br><img src="https://s2.loli.net/2024/01/24/rgWyhLDT8x7b6eQ.jpg" alt="Photo_home-snow_240123097.jpg"><br><img src="https://s2.loli.net/2024/01/24/2JMGXTNpjZtCnL7.jpg" alt="Photo_home-snow_240123105.jpg"><br><img src="https://s2.loli.net/2024/01/24/G6C12SINkmuhVEX.jpg" alt="Photo_home-snow_240123104.jpg"><br><img src="https://s2.loli.net/2024/01/24/ItDRZ1OK4SFfonL.jpg" alt="Photo_home-snow_240123103.jpg"><br><img src="https://s2.loli.net/2024/01/24/DfSh2VJgrT7GFbw.jpg" alt="Photo_home-snow_240123101.jpg"><br><img src="https://s2.loli.net/2024/01/24/3FmAqRr5E8Siptb.jpg" alt="Photo_home-snow_240123106.jpg"><br><img src="https://s2.loli.net/2024/01/24/ZtnK9xmE42livNy.jpg" alt="Photo_home-snow_240123100.jpg"><br><img src="https://s2.loli.net/2024/01/24/hzDexgQoJLisRI2.jpg" alt="Photo_home-snow_240123099.jpg"><br><img src="https://s2.loli.net/2024/01/24/lTc4vs2qXxWiEDA.jpg" alt="Photo_home-snow_240123113.jpg"><br><img src="https://s2.loli.net/2024/01/24/EH2ps8L4OolQA7X.jpg" alt="Photo_home-snow_240123114.jpg"><br><img src="https://s2.loli.net/2024/01/24/lu5xH4QRay8gmz9.jpg" alt="Photo_home-snow_240123110.jpg"><br><img src="https://s2.loli.net/2024/01/24/QT5WkjCM1wZyovV.jpg" alt="Photo_home-snow_240123116.jpg"><br><img src="https://s2.loli.net/2024/01/24/ex3jOZr4vK7bdE9.jpg" alt="Photo_home-snow_240123115.jpg"><br><img src="https://s2.loli.net/2024/01/24/w79ZRfuXQK2h6lT.jpg" alt="Photo_home-snow_240123112.jpg"><br><img src="https://s2.loli.net/2024/01/24/buBshMqZXCo4Pd2.jpg" alt="Photo_home-snow_240123108.jpg"><br><img src="https://s2.loli.net/2024/01/24/NcPwU4eqYlBFiMR.jpg" alt="Photo_home-snow_240123109.jpg"><br><img src="https://s2.loli.net/2024/01/24/NyCocajhPvgdXrG.jpg" alt="Photo_home-snow_240123107.jpg"><br><img src="https://s2.loli.net/2024/01/24/FESva2TPcJpXyi7.jpg" alt="Photo_home-snow_240123111.jpg"><br><img src="https://s2.loli.net/2024/01/24/wqY4COFMUfzE6yb.jpg" alt="Photo_home-snow_240123119.jpg"><br><img src="https://s2.loli.net/2024/01/24/fHw9SnAteVkpqXW.jpg" alt="Photo_home-snow_240123117.jpg"><br><img src="https://s2.loli.net/2024/01/24/s8TfMvOgzwQ9elP.jpg" alt="Photo_home-snow_240123118.jpg"></p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/winter/">winter</a>
+        </span>
+      
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+    </div>
+    <div>
+      
+        <a href="/2024/01/22/Journal-16-Home-in-Snow/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          Journal 16| Home in Snow
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+<script src="https://giscus.app/client.js"
+        data-repo="infine-zero/giscus"
+        data-repo-id="R_kgDOJXiISw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJXiIS84CV0ca"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </div>
+</section>
+
+  </main>
+  <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
+  <!-- busuanzi -->
+  
+
+  <!-- copyright -->
+  </div class>
+    <span>© 2022</span>
+    <iconify-icon width="18" icon="emojione-monotone:maple-leaf" ></iconify-icon>
+    <a href="https://github.com/xbmlz" target="_blank" rel="noopener noreferrer">xbmlz</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-2">
+    <span>Powered by</span>
+    <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank" rel="noopener noreferrer">Maple</a>
+  </div>
+
+</footer>
+<script>
+      var now = new Date(); 
+      function createtime() { 
+          var grt= new Date("03/12/2019 12:00:00");//此处修改你的建站时间或者网站上线时间 
+          now.setTime(now.getTime()+250); 
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+  setInterval("createtime()",250);
+  </script>
+  <iconify-icon class="fixed right-4 bottom-10 z-100 opacity-0" width="24" icon="ion:arrow-up-c" id="go-top"></iconify-icon>
+  
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+
+</body>
+
+</html>

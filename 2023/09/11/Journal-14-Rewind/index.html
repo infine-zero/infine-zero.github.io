@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Infine">
+
+
+  <meta name="subtitle" content="infine_island：Welcome to wander. Comments are available here. Please use PC for best experience.">
+
+
+  <meta name="description" content="welcome to wander">
+
+
+
+<title>Journal 14| Rewind | INLAND</title>
+
+
+
+<link rel="icon" href="/logo.svg">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+
+
+<script src="/lib/nprogress/nprogress.js"></script>
+
+<script>
+  $(document).ready(() => {
+    NProgress.configure({
+      showSpinner: false,
+    });
+    NProgress.start();
+    $("#nprogress .bar").css({
+      background: "#de7441",
+    });
+    $("#nprogress .peg").css({
+      "box-shadow": "0 0 2px #de7441, 0 0 4px #de7441",
+    });
+    $("#nprogress .spinner-icon").css({
+      "border-top-color": "#de7441",
+      "border-left-color": "#de7441",
+    });
+    setTimeout(function () {
+      NProgress.done();
+      $(".fade").removeClass("out");
+    }, 800);
+  });
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+  })();
+  window.onload = function () {
+    // init iconify icon
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
+      $("#toggle-dark").attr("icon", "ri:moon-line");
+    } else {
+      $("#toggle-dark").attr("icon", "ri:sun-line");
+    }
+
+    const toggleDark = () => {
+      console.log("toggle dark");
+      const darkMode = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("hexo-color-scheme", darkMode ? "dark" : "light");
+      $("#toggle-dark").attr("icon", darkMode ? "ri:moon-line" : "ri:sun-line");
+    };
+
+    $("#toggle-dark").click(toggleDark);
+  };
+</script>
+
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="INLAND" type="application/atom+xml">
+</head>
+<body class="font-sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200">
+  <header class="fixed w-full px-5 py-1 z-10 backdrop-blur-xl backdrop-saturate-150 border-b border-black/5">
+  <div class="max-auto">
+    <nav class="flex items-center text-base">
+      <a href="/" class="group">
+        <h2 class="font-medium tracking-tighterp text-l p-2">
+          <img class="w-5 mr-2 inline-block transition-transform group-hover:rotate-[30deg]" src="/logo.svg" alt="INLAND" />
+          INLAND
+        </h2>
+      </a>
+      <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        about
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-2">
+        
+          <a class="hidden sm:flex" href="/category">Categories</a>
+        
+          <a class="hidden sm:flex" href="/about">About</a>
+        
+        
+          
+            <a class="w-5 h-5 hidden sm:flex" title="Bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/10838981">
+              <iconify-icon width="20" icon="ri:bilibili-line"></iconify-icon>
+            </a>
+          
+        
+        <a class="w-5 h-5" title="toggle theme">
+          <iconify-icon width="20" icon="ri:sun-line" id="toggle-dark"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 ml-3 sm:hidden">
+        <span class="w-5 h-5" aria-hidden="true" role="img" id="open-menu">
+          <iconify-icon width="20" icon="carbon:menu" ></iconify-icon>
+        </span>
+        <span class="w-5 h-5 hidden" aria-hidden="true" role="img" id="close-menu">
+          <iconify-icon  width="20" icon="carbon:close" ></iconify-icon>
+        </span>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="menu-panel" class="h-0 overflow-hidden sm:hidden fixed left-0 right-0 top-12 bottom-0 z-10">
+  <div id="menu-content" class="relative z-20 bg-white/80 px-6 sm:px-8 py-2 backdrop-blur-xl -translate-y-full transition-transform duration-300">
+    <ul class="nav flex flex-col sm:flex-row text-sm font-medium">
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/category" class="flex h-12 sm:h-auto items-center">Categories</a>
+        </li>
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/about" class="flex h-12 sm:h-auto items-center">About</a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="mask bg-black/20 absolute inset-0"></div>
+</div>
+
+  <main class="p-6">
+    <!-- toc -->
+
+  <!-- tocbot -->
+<nav class="post-toc toc text-sm w-48 relative top-32 right-0 opacity-70 hidden lg:block" style="position: fixed !important;"></nav>
+
+
+<section class="px-0 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        Journal 14| Rewind
+      </h1>
+      <p class="mb-6">
+        
+      </p>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <time>2023-09-11 14:59:20</time>
+          <span class="text-gray-400">·</span>
+          <span>1 min</span>
+          <span class="text-gray-400">·</span>
+          <span>21 words</span>
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content mt-10 prose dark:prose-invert post-content">
+    <h2 id="botanicalgarden-230910"><a href="#botanicalgarden-230910" class="headerlink" title="botanicalgarden_230910"></a>botanicalgarden_230910</h2><p>sorry for simply stacking pictures this time. I owe these images their names.<br>Been lacking creativity for a fairly long time.</p>
+<hr>
+<p><img src="https://s2.loli.net/2023/09/11/e2ohsblE8ZDfIrw.jpg" alt="Photo_botanicalgarden_230910_17.jpg"><br><img src="https://s2.loli.net/2023/09/11/TjQcwpYCuslFg1y.jpg" alt="Photo_botanicalgarden_230910_14.jpg"><br><img src="https://s2.loli.net/2023/09/11/2CzNnrQbBZ3P4vR.jpg" alt="Photo_botanicalgarden_230910_07.jpg"><br><img src="https://s2.loli.net/2023/09/11/yN9sdivWUerbuVT.jpg" alt="Photo_botanicalgarden_230910_31.jpg"><br><img src="https://s2.loli.net/2023/09/11/eOYygpwmNb74fc1.jpg" alt="Photo_botanicalgarden_230910_21.jpg"><br><img src="https://s2.loli.net/2023/09/11/aiyBr87VTMwzsLg.jpg" alt="Photo_botanicalgarden_230910_22.jpg"><br><img src="https://s2.loli.net/2023/09/11/qh31VJoemzYFWQt.jpg" alt="Photo_botanicalgarden_230910_29.jpg"><br><img src="https://s2.loli.net/2023/09/11/pfl1rS3EuJgkxPF.jpg" alt="Photo_botanicalgarden_230910_24.jpg"><br><img src="https://s2.loli.net/2023/09/11/z8XjbKev4fpnDYh.jpg" alt="Photo_botanicalgarden_230910_13.jpg"><br><img src="https://s2.loli.net/2023/09/11/O9ej7mkBQ3TNLYD.jpg" alt="Photo_botanicalgarden_230910_34.jpg"><br><img src="https://s2.loli.net/2023/09/11/TJa47yd1KoCgtvq.jpg" alt="Photo_botanicalgarden_230910_76.jpg"><br><img src="https://s2.loli.net/2023/09/11/vHAxg4yYbuWjeoX.jpg" alt="Photo_botanicalgarden_230910_38.jpg"><br><img src="https://s2.loli.net/2023/09/11/mPcuyQ4Cebgz67r.jpg" alt="Photo_botanicalgarden_230910_39.jpg"><br><img src="https://s2.loli.net/2023/09/11/zRw6VpgNZAXTdDE.jpg" alt="Photo_botanicalgarden_230910_48.jpg"><br><img src="https://s2.loli.net/2023/09/11/mAKpPYRczO2SFIj.jpg" alt="Photo_botanicalgarden_230910_80.jpg"><br><img src="https://s2.loli.net/2023/09/11/YVaRAt7PqkbO2FZ.jpg" alt="Photo_botanicalgarden_230910_78.jpg"><br><img src="https://s2.loli.net/2023/09/11/TmYFCwjdMG2JlO7.jpg" alt="Photo_botanicalgarden_230910_81.jpg"><br><img src="https://s2.loli.net/2023/09/11/2n5tYmxGUXVpRPN.jpg" alt="Photo_botanicalgarden_230910_79.jpg"><br><img src="https://s2.loli.net/2023/09/11/c7pEuLwMmTzPDU5.jpg" alt="Photo_botanicalgarden_230910_35.jpg"><br><img src="https://s2.loli.net/2023/09/11/Nv3jpBCSdJVkPnF.jpg" alt="Photo_botanicalgarden_230910_77.jpg"><br><img src="https://s2.loli.net/2023/09/11/LY8oWHvhN4TipA6.jpg" alt="Photo_botanicalgarden_230910_86.jpg"><br><img src="https://s2.loli.net/2023/09/11/j9fopeCJnKLxS6R.jpg" alt="Photo_botanicalgarden_230910_98.jpg"><br><img src="https://s2.loli.net/2023/09/11/QeJrpNKtFgyXokY.jpg" alt="Photo_botanicalgarden_230910_102.jpg"><br><img src="https://s2.loli.net/2023/09/11/sYvySMi7pNdK2e1.jpg" alt="Photo_botanicalgarden_230910_99.jpg"><br><img src="https://s2.loli.net/2023/09/11/FPkcLvqGTAheEgB.jpg" alt="Photo_botanicalgarden_230910_89.jpg"><br><img src="https://s2.loli.net/2023/09/11/wcCyJr5nsXbOpjQ.jpg" alt="Photo_botanicalgarden_230910_88.jpg"><br><img src="https://s2.loli.net/2023/09/11/Tr9eNvX8mJBpPEH.jpg" alt="Photo_botanicalgarden_230910_96.jpg"><br><img src="https://s2.loli.net/2023/09/11/hTnuKwBU1FQOZEp.jpg" alt="Photo_botanicalgarden_230910_94.jpg"><br><img src="https://s2.loli.net/2023/09/11/inG4qEK8oWIrZBV.jpg" alt="Photo_botanicalgarden_230910_95.jpg"><br><img src="https://s2.loli.net/2023/09/11/ikAGP4CU6JHcDTB.jpg" alt="Photo_botanicalgarden_230910_104.jpg"><br><img src="https://s2.loli.net/2023/09/11/e4j8bdFKBnpiaZQ.jpg" alt="Photo_botanicalgarden_230910_106.jpg"><br><img src="https://s2.loli.net/2023/09/11/fy8w5b9BaLxdsG4.jpg" alt="Photo_botanicalgarden_230910_102.jpg"><br><img src="https://s2.loli.net/2023/09/11/bZB4QmGgewlNRXC.jpg" alt="Photo_botanicalgarden_230910_81.jpg"><br><img src="https://s2.loli.net/2023/09/11/8gOckPu4AnV3Urz.jpg" alt="Photo_botanicalgarden_230910_09.jpg"><br><img src="https://s2.loli.net/2023/09/11/Z4idstOXgTEIkyc.jpg" alt="Photo_botanicalgarden_230910_08.jpg"><br><img src="https://s2.loli.net/2023/09/11/UkIYSd45zyfZpgj.jpg" alt="Photo_botanicalgarden_230910_01.jpg"><br><img src="https://s2.loli.net/2023/09/11/kJuRpD359aeIKGC.jpg" alt="Photo_botanicalgarden_230910_06.jpg"><br><img src="https://s2.loli.net/2023/09/11/Ae6LlKMatcdhXYu.jpg" alt="Photo_botanicalgarden_230910_10.jpg"><br><img src="https://s2.loli.net/2023/09/11/24JgMPGKQX6Ytoa.jpg" alt="Photo_botanicalgarden_230910_03.jpg"><br><img src="https://s2.loli.net/2023/09/11/sQAdYujVgwqt1IE.jpg" alt="Photo_botanicalgarden_230910_11.jpg"><br><img src="https://s2.loli.net/2023/09/11/3xFdAyUl7na8w9E.jpg" alt="Photo_botanicalgarden_230910_05.jpg"><br><img src="https://s2.loli.net/2023/09/11/oiS2TbjryevMdGn.jpg" alt="Photo_botanicalgarden_230910_16.jpg"><br><img src="https://s2.loli.net/2023/09/11/lZsOrG2RXhP71cN.jpg" alt="Photo_botanicalgarden_230910_20.jpg"><br><img src="https://s2.loli.net/2023/09/11/iacPq2rwTWsXvKp.jpg" alt="Photo_botanicalgarden_230910_26.jpg"><br><img src="https://s2.loli.net/2023/09/11/3igR4WuyKI2let9.jpg" alt="Photo_botanicalgarden_230910_30.jpg"><br><img src="https://s2.loli.net/2023/09/11/ZG1jRLanwydg5EC.jpg" alt="Photo_botanicalgarden_230910_33.jpg"><br><img src="https://s2.loli.net/2023/09/11/9XcOnyoJuZxFTVb.jpg" alt="Photo_botanicalgarden_230910_36.jpg"><br><img src="https://s2.loli.net/2023/09/11/APz4nwY9SFjaZrx.jpg" alt="Photo_botanicalgarden_230910_32.jpg"><br><img src="https://s2.loli.net/2023/09/11/2yYWBp9Vez3ghHK.jpg" alt="Photo_botanicalgarden_230910_23.jpg"><br><img src="https://s2.loli.net/2023/09/11/zDMdIgHEkPyYr5L.jpg" alt="Photo_botanicalgarden_230910_15.jpg"><br><img src="https://s2.loli.net/2023/09/11/2f4KWhyTb5QsHtB.jpg" alt="Photo_botanicalgarden_230910_55.jpg"><br><img src="https://s2.loli.net/2023/09/11/8vTiFD3QASV7kdG.jpg" alt="Photo_botanicalgarden_230910_44.jpg"><br><img src="https://s2.loli.net/2023/09/11/N6VTWFdOCQEx7XD.jpg" alt="Photo_botanicalgarden_230910_52.jpg"><br><img src="https://s2.loli.net/2023/09/11/1qFUobhrGYKBXWu.jpg" alt="Photo_botanicalgarden_230910_54.jpg"><br><img src="https://s2.loli.net/2023/09/11/2KvZwfp8QdMJlT5.jpg" alt="Photo_botanicalgarden_230910_37.jpg"><br><img src="https://s2.loli.net/2023/09/11/evkX563U8fWmr1Z.jpg" alt="Photo_botanicalgarden_230910_53.jpg"><br><img src="https://s2.loli.net/2023/09/11/LASpEQfgWuKBb6q.jpg" alt="Photo_botanicalgarden_230910_42.jpg"><br><img src="https://s2.loli.net/2023/09/11/NuoEkbCAhnwH3jU.jpg" alt="Photo_botanicalgarden_230910_50.jpg"><br><img src="https://s2.loli.net/2023/09/11/1TpEdAsL9yolC3f.jpg" alt="Photo_botanicalgarden_230910_51.jpg"><br><img src="https://s2.loli.net/2023/09/11/bh194JM8tRefNDp.jpg" alt="Photo_botanicalgarden_230910_49.jpg"><br><img src="https://s2.loli.net/2023/09/11/n6r8kVBYiWCq4AX.jpg" alt="Photo_botanicalgarden_230910_66.jpg"><br><img src="https://s2.loli.net/2023/09/11/pu85VCIkbtc2FQJ.jpg" alt="Photo_botanicalgarden_230910_58.jpg"><br><img src="https://s2.loli.net/2023/09/11/axSNpgLRJ1Dnol9.jpg" alt="Photo_botanicalgarden_230910_65.jpg"><br><img src="https://s2.loli.net/2023/09/11/NEjw6ZchSGYve1q.jpg" alt="Photo_botanicalgarden_230910_61.jpg"><br><img src="https://s2.loli.net/2023/09/11/WbvgnhxTiSN1VI4.jpg" alt="Photo_botanicalgarden_230910_60.jpg"><br><img src="https://s2.loli.net/2023/09/11/2vdgG6Q3fNyIVAe.jpg" alt="Photo_botanicalgarden_230910_62.jpg"><br><img src="https://s2.loli.net/2023/09/11/NHflk9IFZzC8twR.jpg" alt="Photo_botanicalgarden_230910_68.jpg"><br><img src="https://s2.loli.net/2023/09/11/qb2dJIB3KMoVCAn.jpg" alt="Photo_botanicalgarden_230910_69.jpg"><br><img src="https://s2.loli.net/2023/09/11/vEbjpLTaosPGedR.jpg" alt="Photo_botanicalgarden_230910_67.jpg"><br><img src="https://s2.loli.net/2023/09/11/xZDpBTMwdJibmCN.jpg" alt="Photo_botanicalgarden_230910_73.jpg"><br><img src="https://s2.loli.net/2023/09/11/TcwXSufneOJMpEm.jpg" alt="Photo_botanicalgarden_230910_75.jpg"><br><img src="https://s2.loli.net/2023/09/11/qFmBclrHhsL8PKt.jpg" alt="Photo_botanicalgarden_230910_84.jpg"><br><img src="https://s2.loli.net/2023/09/11/1wpV5vzreDfQtxq.jpg" alt="Photo_botanicalgarden_230910_108.jpg"><br><img src="https://s2.loli.net/2023/09/11/Xi6ykaHumqd84jY.jpg" alt="Photo_botanicalgarden_230910_72.jpg"><br><img src="https://s2.loli.net/2023/09/11/xL3NmpbfjqTdlXU.jpg" alt="Photo_botanicalgarden_230910_71.jpg"><br><img src="https://s2.loli.net/2023/09/11/WLyldr5jhuCFvBJ.jpg" alt="Photo_botanicalgarden_230910_70.jpg"></p>
+<hr>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+        <a href="/2023/09/12/Journal-15-Shenzhen/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
+          Journal 15| Shenzhen
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/2023/05/12/Journal-13-Undercurrents-surging/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          Journal 13| Undercurrents, surging
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+<script src="https://giscus.app/client.js"
+        data-repo="infine-zero/giscus"
+        data-repo-id="R_kgDOJXiISw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJXiIS84CV0ca"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </div>
+</section>
+
+  </main>
+  <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
+  <!-- busuanzi -->
+  
+
+  <!-- copyright -->
+  </div class>
+    <span>© 2022</span>
+    <iconify-icon width="18" icon="emojione-monotone:maple-leaf" ></iconify-icon>
+    <a href="https://github.com/xbmlz" target="_blank" rel="noopener noreferrer">xbmlz</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-2">
+    <span>Powered by</span>
+    <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank" rel="noopener noreferrer">Maple</a>
+  </div>
+
+</footer>
+<script>
+      var now = new Date(); 
+      function createtime() { 
+          var grt= new Date("03/12/2019 12:00:00");//此处修改你的建站时间或者网站上线时间 
+          now.setTime(now.getTime()+250); 
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+  setInterval("createtime()",250);
+  </script>
+  <iconify-icon class="fixed right-4 bottom-10 z-100 opacity-0" width="24" icon="ion:arrow-up-c" id="go-top"></iconify-icon>
+  
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+
+</body>
+
+</html>

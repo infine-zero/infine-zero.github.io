@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Infine">
+
+
+  <meta name="subtitle" content="infine_island：Welcome to wander. Comments are available here. Please use PC for best experience.">
+
+
+  <meta name="description" content="welcome to wander">
+
+
+
+<title>碎碎念 2| 夏天的标记 | INLAND</title>
+
+
+
+<link rel="icon" href="/logo.svg">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+
+
+<script src="/lib/nprogress/nprogress.js"></script>
+
+<script>
+  $(document).ready(() => {
+    NProgress.configure({
+      showSpinner: false,
+    });
+    NProgress.start();
+    $("#nprogress .bar").css({
+      background: "#de7441",
+    });
+    $("#nprogress .peg").css({
+      "box-shadow": "0 0 2px #de7441, 0 0 4px #de7441",
+    });
+    $("#nprogress .spinner-icon").css({
+      "border-top-color": "#de7441",
+      "border-left-color": "#de7441",
+    });
+    setTimeout(function () {
+      NProgress.done();
+      $(".fade").removeClass("out");
+    }, 800);
+  });
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+  })();
+  window.onload = function () {
+    // init iconify icon
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
+      $("#toggle-dark").attr("icon", "ri:moon-line");
+    } else {
+      $("#toggle-dark").attr("icon", "ri:sun-line");
+    }
+
+    const toggleDark = () => {
+      console.log("toggle dark");
+      const darkMode = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("hexo-color-scheme", darkMode ? "dark" : "light");
+      $("#toggle-dark").attr("icon", darkMode ? "ri:moon-line" : "ri:sun-line");
+    };
+
+    $("#toggle-dark").click(toggleDark);
+  };
+</script>
+
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="INLAND" type="application/atom+xml">
+</head>
+<body class="font-sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200">
+  <header class="fixed w-full px-5 py-1 z-10 backdrop-blur-xl backdrop-saturate-150 border-b border-black/5">
+  <div class="max-auto">
+    <nav class="flex items-center text-base">
+      <a href="/" class="group">
+        <h2 class="font-medium tracking-tighterp text-l p-2">
+          <img class="w-5 mr-2 inline-block transition-transform group-hover:rotate-[30deg]" src="/logo.svg" alt="INLAND" />
+          INLAND
+        </h2>
+      </a>
+      <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        about
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-2">
+        
+          <a class="hidden sm:flex" href="/category">Categories</a>
+        
+          <a class="hidden sm:flex" href="/about">About</a>
+        
+        
+          
+            <a class="w-5 h-5 hidden sm:flex" title="Bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/10838981">
+              <iconify-icon width="20" icon="ri:bilibili-line"></iconify-icon>
+            </a>
+          
+        
+        <a class="w-5 h-5" title="toggle theme">
+          <iconify-icon width="20" icon="ri:sun-line" id="toggle-dark"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 ml-3 sm:hidden">
+        <span class="w-5 h-5" aria-hidden="true" role="img" id="open-menu">
+          <iconify-icon width="20" icon="carbon:menu" ></iconify-icon>
+        </span>
+        <span class="w-5 h-5 hidden" aria-hidden="true" role="img" id="close-menu">
+          <iconify-icon  width="20" icon="carbon:close" ></iconify-icon>
+        </span>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="menu-panel" class="h-0 overflow-hidden sm:hidden fixed left-0 right-0 top-12 bottom-0 z-10">
+  <div id="menu-content" class="relative z-20 bg-white/80 px-6 sm:px-8 py-2 backdrop-blur-xl -translate-y-full transition-transform duration-300">
+    <ul class="nav flex flex-col sm:flex-row text-sm font-medium">
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/category" class="flex h-12 sm:h-auto items-center">Categories</a>
+        </li>
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/about" class="flex h-12 sm:h-auto items-center">About</a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="mask bg-black/20 absolute inset-0"></div>
+</div>
+
+  <main class="p-6">
+    <!-- toc -->
+
+<section class="px-0 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        碎碎念 2| 夏天的标记
+      </h1>
+      <p class="mb-6">
+        加密博文
+      </p>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <time>2023-05-08 21:30:05</time>
+          <span class="text-gray-400">·</span>
+          <span>1 min</span>
+          <span class="text-gray-400">·</span>
+          <span>2 words</span>
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content mt-10 prose dark:prose-invert post-content">
+    <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="去看看公开博文吧：D" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="2913ab139c3521e6a548b11335f2f4be4cf93ef278bde886e712fa6b92553c20">36b0c44f87165aed1017e870d8bb2bec2cfb3c4f1085a8c4c6f7a5e052f7aa240fa28a4dae9865c0507e568b99c902785ea0d77a7c11b6fc39d6ad823d984d7df24a18a20a704dbd81505b4723483cebc7f99472fb52399c9db75123bbd0bba2576d95460aa61a3284d820f23f31415098a711048f74112d9c79240e9dc54574680377e7ef873ce3157a0085c2f37b3c7c52a6d2f67499677e04c401d3e659361ea9e75bdb0e606f94a28ca17b55410476e5a3bf7c952434125b34ed3004182fc3c41cb7b4e0b150de10901d27060730f4fdb1ebc54bddd9ac4adbb6079f584fa1a456db047cad0448bda457ec7f48a7b5f25e7ffb432f8d08e634548121da171737260db17a2b0ab7b6ae28557ff2f45489bff5167683764c4b19780cef18ca63fcba715e3e32567fb8a777764beed542f5b9be8575b1eb34cb4f98424b1c33d14d8e7b61770479e8c2ece7a4250d6d3e4be813544f8cbf465786f079cf4551b3bf446f5c86d4b767fadaa0113038a7251583e8b3be11055826cf91ca4e96f0bfe1aac8bfee6ec4d113db9a61262cacd36b009e55507c97c45e5e7713d7f70c784a817e5f14c65129dc14735d6a898df3032d60c2fe06c934c26fdaab878a439e75711bfa3079c69eba5344ae7495e5d57b08cba4eba63e38e9ee688da3e35de74b3cd36d42eb5ab2b45e58b90f347b782ede38d576670fcaa79f3bc173c406b67e6921ee3836d0324caf744462416e200d565d5e1dbd44e6b10afea826ee4884c168bcc0d5d5d72ea1855744fb778bb9bf2396c6d751a82172c71702c337976514cfa4b0a0e3bcdcaf2145348150cf5843b74893dd4d444d1806403fc5e053765addc470c7e89e67e2e770e356f2710384990fc53ce5dc5121782217100339aea340e22ba8729160b5b33af5ca41cba39d740aec267bfaee957b290dabbaff4e0c2513fc431da54b306867402d42ef00dafb938d457605099b62cb59122c6c824fe36be2c6d2257dca32d9f9737e75fb829dabf446492c32f0489bc54c263fa81bea775a0fa1448777df37f4d496dabb93e2ed0d8262f20185ce4d3cf32e9deec2b4c2467bda74a8988f2bc996e8a14ae7c20680b19afa505f9fac6eaf7ad15d95b81629a9a925243f0a4fe724d8279e19713d1dbc461d338f8d76066e180496e5a431915e4b98ae89920bdaadedc1a55e19eb2beae81957de021c98708c26a0e61eac9f364be6c24a006e7f2138a52783b8a1cbbba009935b867033be34332c948ff88afd1920da5b9d234f0d976f4f1e9652464fe59e815f856f4c60ae1b0dc3daa4672963f40495173e5f33e651dfeb250810a58df8fd9cfd02bbe62dca96de3b23cfea7ecb63cf7e78517858652742e3ca691faf5aa4486906a9165dbe139ca906c43c8867f7ac82f56c8d2c60dd06e0cb622d05ccd9c7ea8979c877e8954644ad9a3afd580531b8a75682c0562057b38a3fc47c1fbaf35bd8490f712336acfa72afedde05baa492b3f94cb7e4ceb6ddcfe7b244533785aa52a1870d35987d7edae295e717f6595b64e505c73ef373363700e440eaa7e1a6bfa4840e25d483f3f90122aefc17ab0d534d363faa5ebf549b2d5758248f42b1a77f821224928826eaaf3b8bfa07d1b92a8e86f81f4e59b38a09a2806f22ef3d15a762c0c828e6de80e4cd1f962d413ef6ce3dd483ea53979b7ddfa71595944465125dadc7ae6656bf513513fd76e97e2756f522bdaa46aaf97336fb4e69ff12fc21e1072ab07f922f722d5c5f60e332c1046725906fbb03aab42d40a0df4281f29380c7e9aefd12b05f04240b7184b3dcf46af8cf9fed9e45dd1d30bc4018368bd6bad0932c7d7081ef80b630f3566fb848e27cff5230a3fa60b2328fdd6b1a9a3f88dacdd8fe33238ea24853345d48c1d6f8aacb51bfd0b2fcb21524f4d613e9816fda43bde81eb058dfff2a96fadcabc1576f4466a9a6fcb22f35614a53d92abc31591aa8b60ae916823a1f1bc9ab3e98067691b1b60d8e6508d1876157ca36a649adb68956aecdb2e17c748076a7ed5aed31cddbb3bbbe9f982ec9269f591f135bf721bfaa7931ac4999420d3c02c6a5049b0407564536a9c0e2c64ee5059c0631a9a4244d485f834f70e86dc89defca33c55f1ffd5ffa06edab0b2e00a39fa365689d1aed152c0a94d098caa751894d8031360a5a6c85c0f50b4dd526bd0f7b1f4cf51df8d42b64ef2b02d55db4d98d641e9412757099e48f9349c8f663c596180d7272a7a5b4ce250871a044ed48c8ce95627cb96b1e28c87b7b39bbf998c2144ec43edec846351f0d603b49e905a4b46db69b67eb246635fd2685d7ecea5b66e25077f1c58ba07609d010e2366e7b6e3d8547d437c60e46c466945ca75a0f439282b82defdb9df1b12415919dfe007c7b2dafd71fee280497191aa9f68bcd0699dbad22084674e9a9de89bfd273501a7664329d51d8c65b33fda9eff99081e768afd2a2e414ec04b9d4991d1c9e08bcd67230ffa703b5cd34253fd950f3a1efbc2affbee9b0e7030bad8040de1329b45d63b9198e34d6f02f7809a1ad8de74a8a2b77409c3663a979119c4f12cbd9a68ad38a91531b79cfb553f654f26f1c62455c870280d6c3faeb96260e721ab7b3246e1d5243cd495047a247b637da202021390a777aec2a6cf8b222a413e8729b3931544902141e4080e77f6cc1d5e3c8d0db7b63248954b3bcad7d60c7cba9ae7148243a4ef24822ba3a249dc3327de00b1be1a7cfbfb66b2d9c9c32ee81a8f94e184fbdbe7ca7838b3d08436f6fb1582b5caae5a34c09e1b71440a908e31ce2f214aa75dec3b03c5b3eee2fc365782f79139803cf0aa647b5801f211ad0634f386576986d29c6c61ce8c3ba869e358d579122b96f03c3dff5d56ae4ee64f03b28930fe297d66471b0954e11f1fc5a9ff0609ab9d4b460ba6bf45aa4b0d8f0e3acc53c0718f2dccff7e1d5602195ecb93fe38fdf8bb098a7a99793483abc4da34a6d517377d0655a2f2e014f5a1d4440d12c3f33e51563d8cb8c06d5cf91fc469d186ed720bf0d58322297c7e3f765e2472930158a4d5f66f4a930f9e71f088b6ab0abcd8307d2224fd21c5e9dc990975342ec344b1a48c36e31aeca22a4b3ad3ab4ce04de5522e8726bfdf4f81ba3cf02f5f388f85115d5c5b6cb9498dc95098fd04a7b54f475596fefe19c6d176902d2bbbc7209208606758d150ae5f0cf3435d7e4734e37dbfcf2fdcfa8f0347ad3686107d291fe9416faf4d1175b18059d0049cba20786945c55174f2d3abca1d35c215a36eaf0764100f2a0625481217384fc4212400b66a191cbd7b490e06402a6dac3f11cf80708515635494070a33875344df6f09b6683a814171d8d164e4036e45d9c5da050b7bc565bc39e3e593bd0b2</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">null</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/none-sense/">none-sense</a>
+        </span>
+      
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+        <a href="/2023/04/18/test2/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          <iconify-icon width="20" icon="ri:arrow-left-s-line" data-inline="false"></iconify-icon>
+          test2
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/2023/04/17/Journal-8-Develop-photos/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          Journal 8| Develop photos
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+<script src="https://giscus.app/client.js"
+        data-repo="infine-zero/giscus"
+        data-repo-id="R_kgDOJXiISw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJXiIS84CV0ca"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </div>
+</section>
+
+  </main>
+  <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
+  <!-- busuanzi -->
+  
+
+  <!-- copyright -->
+  </div class>
+    <span>© 2022</span>
+    <iconify-icon width="18" icon="emojione-monotone:maple-leaf" ></iconify-icon>
+    <a href="https://github.com/xbmlz" target="_blank" rel="noopener noreferrer">xbmlz</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-2">
+    <span>Powered by</span>
+    <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank" rel="noopener noreferrer">Maple</a>
+  </div>
+
+</footer>
+<script>
+      var now = new Date(); 
+      function createtime() { 
+          var grt= new Date("03/12/2019 12:00:00");//此处修改你的建站时间或者网站上线时间 
+          now.setTime(now.getTime()+250); 
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+  setInterval("createtime()",250);
+  </script>
+  <iconify-icon class="fixed right-4 bottom-10 z-100 opacity-0" width="24" icon="ion:arrow-up-c" id="go-top"></iconify-icon>
+  
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+
+</body>
+
+</html>
