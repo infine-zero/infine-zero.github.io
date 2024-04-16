@@ -1,3 +1,4 @@
+http://example.com/2024/04/16/blog3/
 http://example.com/2024/01/24/Journal-17-Snowy-sun/
 http://example.com/2023/04/15/hello-world/
 http://example.com/2024/01/22/Journal-16-Home-in-Snow/
@@ -32,6 +33,7 @@ http://example.com/tags/images/
 http://example.com/tags/none-sense/
 http://example.com/tags/objects/
 http://example.com/tags/winter/
+http://example.com/tags/birds-plants/
 http://example.com/categories/programming/
 http://example.com/categories/life/
 http://example.com/categories/other/

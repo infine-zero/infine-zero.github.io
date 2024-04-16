@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Infine">
+
+
+  <meta name="subtitle" content="infine_island：Welcome to wander. Comments are available here. Please use PC for best experience.">
+
+
+  <meta name="description" content="welcome to wander">
+
+
+
+<title>Journal 18| Botanical Garden Rewind | INLAND</title>
+
+
+
+<link rel="icon" href="/logo.svg">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+
+
+<script src="/lib/nprogress/nprogress.js"></script>
+
+<script>
+  $(document).ready(() => {
+    NProgress.configure({
+      showSpinner: false,
+    });
+    NProgress.start();
+    $("#nprogress .bar").css({
+      background: "#de7441",
+    });
+    $("#nprogress .peg").css({
+      "box-shadow": "0 0 2px #de7441, 0 0 4px #de7441",
+    });
+    $("#nprogress .spinner-icon").css({
+      "border-top-color": "#de7441",
+      "border-left-color": "#de7441",
+    });
+    setTimeout(function () {
+      NProgress.done();
+      $(".fade").removeClass("out");
+    }, 800);
+  });
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+  })();
+  window.onload = function () {
+    // init iconify icon
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
+      $("#toggle-dark").attr("icon", "ri:moon-line");
+    } else {
+      $("#toggle-dark").attr("icon", "ri:sun-line");
+    }
+
+    const toggleDark = () => {
+      console.log("toggle dark");
+      const darkMode = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("hexo-color-scheme", darkMode ? "dark" : "light");
+      $("#toggle-dark").attr("icon", darkMode ? "ri:moon-line" : "ri:sun-line");
+    };
+
+    $("#toggle-dark").click(toggleDark);
+  };
+</script>
+
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="INLAND" type="application/atom+xml">
+</head>
+<body class="font-sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200">
+  <header class="fixed w-full px-5 py-1 z-10 backdrop-blur-xl backdrop-saturate-150 border-b border-black/5">
+  <div class="max-auto">
+    <nav class="flex items-center text-base">
+      <a href="/" class="group">
+        <h2 class="font-medium tracking-tighterp text-l p-2">
+          <img class="w-5 mr-2 inline-block transition-transform group-hover:rotate-[30deg]" src="/logo.svg" alt="INLAND" />
+          INLAND
+        </h2>
+      </a>
+      <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        about
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-2">
+        
+          <a class="hidden sm:flex" href="/category">Categories</a>
+        
+          <a class="hidden sm:flex" href="/about">About</a>
+        
+        
+          
+            <a class="w-5 h-5 hidden sm:flex" title="Bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/10838981">
+              <iconify-icon width="20" icon="ri:bilibili-line"></iconify-icon>
+            </a>
+          
+        
+        <a class="w-5 h-5" title="toggle theme">
+          <iconify-icon width="20" icon="ri:sun-line" id="toggle-dark"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 ml-3 sm:hidden">
+        <span class="w-5 h-5" aria-hidden="true" role="img" id="open-menu">
+          <iconify-icon width="20" icon="carbon:menu" ></iconify-icon>
+        </span>
+        <span class="w-5 h-5 hidden" aria-hidden="true" role="img" id="close-menu">
+          <iconify-icon  width="20" icon="carbon:close" ></iconify-icon>
+        </span>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="menu-panel" class="h-0 overflow-hidden sm:hidden fixed left-0 right-0 top-12 bottom-0 z-10">
+  <div id="menu-content" class="relative z-20 bg-white/80 px-6 sm:px-8 py-2 backdrop-blur-xl -translate-y-full transition-transform duration-300">
+    <ul class="nav flex flex-col sm:flex-row text-sm font-medium">
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/category" class="flex h-12 sm:h-auto items-center">Categories</a>
+        </li>
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/about" class="flex h-12 sm:h-auto items-center">About</a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="mask bg-black/20 absolute inset-0"></div>
+</div>
+
+  <main class="p-6">
+    <!-- toc -->
+
+<section class="px-0 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        Journal 18| Botanical Garden Rewind
+      </h1>
+      <p class="mb-6">
+        
+      </p>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <time>2024-04-16 16:44:37</time>
+          <span class="text-gray-400">·</span>
+          <span>1 min</span>
+          <span class="text-gray-400">·</span>
+          <span>0 words</span>
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content mt-10 prose dark:prose-invert post-content">
+    <p><img src="https://s2.loli.net/2024/04/16/2cR48YanSOMuLXe.jpg" alt="Photo_BotanicalGarden_240415_005.jpg"><br><img src="https://s2.loli.net/2024/04/16/wZqd4Ee5TOvymLI.jpg" alt="Photo_BotanicalGarden_240415_017.jpg"><br><img src="https://s2.loli.net/2024/04/16/cazVqyKDLIBWoAM.jpg" alt="Photo_BotanicalGarden_240415_018.jpg"><br><img src="https://s2.loli.net/2024/04/16/L1EZtDerQ3M8uqN.jpg" alt="Photo_BotanicalGarden_240415_010.jpg"><br><img src="https://s2.loli.net/2024/04/16/to6hlfNvPYVpaTO.jpg" alt="Photo_BotanicalGarden_240415_006.jpg"><br><img src="https://s2.loli.net/2024/04/16/8gEYS4bTLuC7mFa.jpg" alt="Photo_BotanicalGarden_240415_011.jpg"><br><img src="https://s2.loli.net/2024/04/16/kbDCrEhPJ7MpTAo.jpg" alt="Photo_BotanicalGarden_240415_013.jpg"><br><img src="https://s2.loli.net/2024/04/16/r6GbDN4zaBxRXZc.jpg" alt="Photo_BotanicalGarden_240415_016.jpg"><br><img src="https://s2.loli.net/2024/04/16/dsN3o1H2nACvFpE.jpg" alt="Photo_BotanicalGarden_240415_014.jpg"><br><img src="https://s2.loli.net/2024/04/16/hVo7Wqd6bNEHXiU.jpg" alt="Photo_BotanicalGarden_240415_015.jpg"><br><img src="https://s2.loli.net/2024/04/16/exq4OTMAI2jDyoW.jpg" alt="Photo_BotanicalGarden_240415_028.jpg"><br><img src="https://s2.loli.net/2024/04/16/D7zhicZHBXrSPnj.jpg" alt="Photo_BotanicalGarden_240415_025.jpg"><br><img src="https://s2.loli.net/2024/04/16/TeyMKaFIbH7Jc1A.jpg" alt="Photo_BotanicalGarden_240415_019.jpg"><br><img src="https://s2.loli.net/2024/04/16/RMZAhjUgX7K68bt.jpg" alt="Photo_BotanicalGarden_240415_029.jpg"><br><img src="https://s2.loli.net/2024/04/16/JxkydEWKFIUb6qV.jpg" alt="Photo_BotanicalGarden_240415_026.jpg"><br><img src="https://s2.loli.net/2024/04/16/X6AM9yTFcWlfGsv.jpg" alt="Photo_BotanicalGarden_240415_027.jpg"><br><img src="https://s2.loli.net/2024/04/16/EnaWKN5ZBmAU8jr.jpg" alt="Photo_BotanicalGarden_240415_033.jpg"><br><img src="https://s2.loli.net/2024/04/16/cKjwW89Lnpr74iM.jpg" alt="Photo_BotanicalGarden_240415_023.jpg"><br><img src="https://s2.loli.net/2024/04/16/S3if7DI2PLWj1zy.jpg" alt="Photo_BotanicalGarden_240415_022.jpg"><br><img src="https://s2.loli.net/2024/04/16/jQ95tSUeTw3r47H.jpg" alt="Photo_BotanicalGarden_240415_039.jpg"><br><img src="https://s2.loli.net/2024/04/16/NryIQxouCXKeV85.jpg" alt="Photo_BotanicalGarden_240415_042.jpg"><br><img src="https://s2.loli.net/2024/04/16/nZERs6TSUyGXAlJ.jpg" alt="Photo_BotanicalGarden_240415_034.jpg"><br><img src="https://s2.loli.net/2024/04/16/15hdLR7ZewfcBUo.jpg" alt="Photo_BotanicalGarden_240415_038.jpg"><br><img src="https://s2.loli.net/2024/04/16/bhtmuSxTJNs96U4.jpg" alt="Photo_BotanicalGarden_240415_035.jpg"><br><img src="https://s2.loli.net/2024/04/16/XsGZ8miuzy4xNV2.jpg" alt="Photo_BotanicalGarden_240415_020.jpg"><br><img src="https://s2.loli.net/2024/04/16/fKRJcgpewmHOC7d.jpg" alt="Photo_BotanicalGarden_240415_052.jpg"><br><img src="https://s2.loli.net/2024/04/16/ElAY8Ztb6mvsQuF.jpg" alt="Photo_BotanicalGarden_240415_045.jpg"><br><img src="https://s2.loli.net/2024/04/16/QfUxnR7lPbIdNyX.jpg" alt="Photo_BotanicalGarden_240415_046.jpg"><br><img src="https://s2.loli.net/2024/04/16/pDdGPQbEWKiNUt3.jpg" alt="Photo_BotanicalGarden_240415_044.jpg"><br><img src="https://s2.loli.net/2024/04/16/iSwh1sXH8AOb9pY.jpg" alt="Photo_BotanicalGarden_240415_050.jpg"><br><img src="https://s2.loli.net/2024/04/16/BhyLasIJW9bmvQc.jpg" alt="Photo_BotanicalGarden_240415_047.jpg"><br><img src="https://s2.loli.net/2024/04/16/b8GfQ7R3vUmyFn9.jpg" alt="Photo_BotanicalGarden_240415_049.jpg"><br><img src="https://s2.loli.net/2024/04/16/8MDfgNETG5FtPBJ.jpg" alt="Photo_BotanicalGarden_240415_043.jpg"><br><img src="https://s2.loli.net/2024/04/16/o6hamqfV1ASpxlU.jpg" alt="Photo_BotanicalGarden_240415_051.jpg"><br><img src="https://s2.loli.net/2024/04/16/Bf8saGv35ilPoug.jpg" alt="Photo_BotanicalGarden_240415_062.jpg"><br><img src="https://s2.loli.net/2024/04/16/Nt9rmJAIpgKPs4D.jpg" alt="Photo_BotanicalGarden_240415_060.jpg"><br><img src="https://s2.loli.net/2024/04/16/nyvjpb7O1tY5cwQ.jpg" alt="Photo_BotanicalGarden_240415_057.jpg"><br><img src="https://s2.loli.net/2024/04/16/ERjB1zpotFYy7lP.jpg" alt="Photo_BotanicalGarden_240415_065.jpg"><br><img src="https://s2.loli.net/2024/04/16/avSX9s7fJDdH54g.jpg" alt="Photo_BotanicalGarden_240415_064.jpg"><br><img src="https://s2.loli.net/2024/04/16/Dr1nGsUNKtmTfJd.jpg" alt="Photo_BotanicalGarden_240415_061.jpg"><br><img src="https://s2.loli.net/2024/04/16/389bWMpouJyQGE5.jpg" alt="Photo_BotanicalGarden_240415_059.jpg"><br><img src="https://s2.loli.net/2024/04/16/qIRGWZDYjydUH1F.jpg" alt="Photo_BotanicalGarden_240415_056.jpg"><br><img src="https://s2.loli.net/2024/04/16/lAyuRCpi7DvGXrK.jpg" alt="Photo_BotanicalGarden_240415_058.jpg"><br><img src="https://s2.loli.net/2024/04/16/Tq3oDt924JWnfN8.jpg" alt="Photo_BotanicalGarden_240415_071.jpg"><br><img src="https://s2.loli.net/2024/04/16/vfpFV6iRBuMhNCS.jpg" alt="Photo_BotanicalGarden_240415_069.jpg"><br><img src="https://s2.loli.net/2024/04/16/qzODUXNRl7nVxSG.jpg" alt="Photo_BotanicalGarden_240415_072.jpg"><br><img src="https://s2.loli.net/2024/04/16/ZB6HQbf93MrCysj.jpg" alt="Photo_BotanicalGarden_240415_068.jpg"><br><img src="https://s2.loli.net/2024/04/16/Jbv4Dy3EcB7t9Xa.jpg" alt="Photo_BotanicalGarden_240415_081.jpg"><br><img src="https://s2.loli.net/2024/04/16/b3nitdv1uZVqWSx.jpg" alt="Photo_BotanicalGarden_240415_080.jpg"><br><img src="https://s2.loli.net/2024/04/16/sx5lRiU7cZW21m9.jpg" alt="Photo_BotanicalGarden_240415_077.jpg"><br><img src="https://s2.loli.net/2024/04/16/WtkguXs9G6AVJ5D.jpg" alt="Photo_BotanicalGarden_240415_078.jpg"><br><img src="https://s2.loli.net/2024/04/16/AD8aQjLw6eOkxml.jpg" alt="Photo_BotanicalGarden_240415_079.jpg"><br><img src="https://s2.loli.net/2024/04/16/AQB23Ve1FK79jPT.jpg" alt="Photo_BotanicalGarden_240415_076.jpg"><br><img src="https://s2.loli.net/2024/04/16/Dp4Ix9ZnMQSbLKY.jpg" alt="Photo_BotanicalGarden_240415_099.jpg"><br><img src="https://s2.loli.net/2024/04/16/nEMkaL7VeHyxTfb.jpg" alt="Photo_BotanicalGarden_240415_098.jpg"><br><img src="https://s2.loli.net/2024/04/16/pc7ugJCNd8LKP9Z.jpg" alt="Photo_BotanicalGarden_240415_103.jpg"><br><img src="https://s2.loli.net/2024/04/16/QNt65RP4ypLTw8H.jpg" alt="Photo_BotanicalGarden_240415_100.jpg"><br><img src="https://s2.loli.net/2024/04/16/O39bS6VDdy7tPEC.jpg" alt="Photo_BotanicalGarden_240415_104.jpg"><br><img src="https://s2.loli.net/2024/04/16/egC362lR9QkuNit.jpg" alt="Photo_BotanicalGarden_240415_109.jpg"><br><img src="https://s2.loli.net/2024/04/16/FmDYSlA1f3R4kCi.jpg" alt="Photo_BotanicalGarden_240415_114.jpg"><br><img src="https://s2.loli.net/2024/04/16/6RPDmzFTUBMq2un.jpg" alt="Photo_BotanicalGarden_240415_113.jpg"><br><img src="https://s2.loli.net/2024/04/16/EHTdnol3vUMjXK9.jpg" alt="Photo_BotanicalGarden_240415_110.jpg"><br><img src="https://s2.loli.net/2024/04/16/fGVSFY4IqtRh1DC.jpg" alt="Photo_BotanicalGarden_240415_107.jpg"><br><img src="https://s2.loli.net/2024/04/16/LfB8Ye1TmJWctoS.jpg" alt="Photo_BotanicalGarden_240415_115.jpg"><br><img src="https://s2.loli.net/2024/04/16/WHZgNs9PkI1bf8j.jpg" alt="Photo_BotanicalGarden_240415_116.jpg"><br><img src="https://s2.loli.net/2024/04/16/E82WI5hm3CV1YH7.jpg" alt="Photo_BotanicalGarden_240415_106.jpg"><br><img src="https://s2.loli.net/2024/04/16/n1Jj4aK7Ovpcq8Q.jpg" alt="Photo_BotanicalGarden_240415_112.jpg"><br><img src="https://s2.loli.net/2024/04/16/d2WqarB1Ki7njPb.jpg" alt="Photo_BotanicalGarden_240415_118.jpg"></p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/birds-plants/">birds plants</a>
+        </span>
+      
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+    </div>
+    <div>
+      
+        <a href="/2024/01/24/Journal-17-Snowy-sun/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          Journal 17| Snowy sun
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+<script src="https://giscus.app/client.js"
+        data-repo="infine-zero/giscus"
+        data-repo-id="R_kgDOJXiISw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJXiIS84CV0ca"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </div>
+</section>
+
+  </main>
+  <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
+  <!-- busuanzi -->
+  
+
+  <!-- copyright -->
+  </div class>
+    <span>© 2022</span>
+    <iconify-icon width="18" icon="emojione-monotone:maple-leaf" ></iconify-icon>
+    <a href="https://github.com/xbmlz" target="_blank" rel="noopener noreferrer">xbmlz</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-2">
+    <span>Powered by</span>
+    <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank" rel="noopener noreferrer">Maple</a>
+  </div>
+
+</footer>
+<script>
+      var now = new Date(); 
+      function createtime() { 
+          var grt= new Date("03/12/2019 12:00:00");//此处修改你的建站时间或者网站上线时间 
+          now.setTime(now.getTime()+250); 
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+  setInterval("createtime()",250);
+  </script>
+  <iconify-icon class="fixed right-4 bottom-10 z-100 opacity-0" width="24" icon="ion:arrow-up-c" id="go-top"></iconify-icon>
+  
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+
+</body>
+
+</html>
