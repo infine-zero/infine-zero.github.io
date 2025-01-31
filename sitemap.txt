@@ -1,3 +1,4 @@
+http://example.com/2025/01/31/123/
 http://example.com/2025/01/31/1234/
 http://example.com/2024/05/03/Journal-19-Early-Dream-of-South-Lake-in-Summer/
 http://example.com/2024/04/16/Journal-18-Botanical-Garden-Rewind/
@@ -37,6 +38,7 @@ http://example.com/tags/objects/
 http://example.com/tags/winter/
 http://example.com/tags/birds-plants/
 http://example.com/tags/birds-landscape/
+http://example.com/tags/landscape-birds/
 http://example.com/categories/programming/
 http://example.com/categories/life/
 http://example.com/categories/other/
