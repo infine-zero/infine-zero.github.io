@@ -190,11 +190,11 @@
       </p>
       <div>
         <section class="flex items-center gap-3 text-sm">
-          <time>2025-02-10 22:09:11</time>
+          <time>2025-02-10 22:14:53</time>
           <span class="text-gray-400">·</span>
           <span>2 min</span>
           <span class="text-gray-400">·</span>
-          <span>442 words</span>
+          <span>444 words</span>
         </section>
       </div>
     </div>
@@ -231,7 +231,11 @@ tag_map:
 </code></pre>
 <p>**ssh: connect to host github.com port 22: Connection timed out<br>fatal: Could not read from remote repository.<br>**<br>    git安装位置，etc&#x2F;.ssh&#x2F;ssh_config.yml末尾添加<br>        Host github.com<br>        Hostname ssh.github.com<br>        User git<br>        PreferredAuthentications publickey<br>        IdentityFile ~&#x2F;.ssh&#x2F;id_rsa # eg. ~&#x2F;.ssh&#x2F;id_rsa<br>        Port 443</p>
 <p><strong>后来的博文中文显示乱码</strong><br>安装<br>npm install hexo-auto-canonical –save</p>
-<h1 id="解决中文乱码问题"><a href="#解决中文乱码问题" class="headerlink" title="解决中文乱码问题"></a>解决中文乱码问题</h1><p>  auto_canonical:<br>  relative: false<br>  extension: ‘.html’ </p>
+<pre><code># 解决中文乱码问题
+  auto_canonical:
+  relative: false
+  extension: &#39;.html&#39; ```
+</code></pre>
 
   </article>
   <!-- tag -->
