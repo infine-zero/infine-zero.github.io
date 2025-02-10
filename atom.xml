@@ -186,29 +186,6 @@
   </entry>
   
   <entry>
-    <title>建站历史</title>
-    <link href="https://infine-zero.github.io/2024/04/16/hello-world/"/>
-    <id>https://infine-zero.github.io/2024/04/16/hello-world/</id>
-    <published>2024-04-16T08:37:40.515Z</published>
-    <updated>2025-02-10T14:14:53.507Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="建站成功"><a href="#建站成功" class="headerlink" title="建站成功"></a>建站成功</h2><p>2023 | 4 | 15</p><h2 id="加入加密功能"><a href="#加入加密功能" class="headerlink" title="加入加密功能"></a>加入加密功能</h2><p>2023 | 4 | 16</p><h2 id="加入评论功能"><a href="#加入评论功能" class="headerlink" title="加入评论功能"></a>加入评论功能</h2><p>2023 | 4 | 17</p><h2 id="尝试配置RSS"><a href="#尝试配置RSS" class="headerlink" title="尝试配置RSS"></a>尝试配置RSS</h2><p>2023 | 4 | 17</p><h2 id="尝试修改主题布局"><a href="#尝试修改主题布局" class="headerlink" title="尝试修改主题布局"></a>尝试修改主题布局</h2><p>2023 | 4 | 18</p><h3 id="archive-ejs"><a href="#archive-ejs" class="headerlink" title="archive.ejs"></a>archive.ejs</h3><pre><code>section class=&quot;px-6 max-w-prose mx-auto gap-12 grid grid-cols-1&quot; </code></pre><p>定义section元素，使用CSS网格布局(grid)</p><p> <code>grid</code> 对应一列(column)，最多只能容纳一个子元素（主页面post略缩条），具有指定的类名<br> <code>px-6</code> ,左右内边距(padding)为6px<br> <code>max-w-prose</code> ， 指定内容宽度的类<br> <code>gap-12</code>   子元素（略缩条）间距12px<br> <code>mx-auto</code>  类：水平居中</p><h3 id="set-categories"><a href="#set-categories" class="headerlink" title="set categories"></a>set categories</h3><p>hexo n category pages</p><p>在根目录_config.yml修改：</p><pre><code>Category &amp; Tagdefault_category: uncategorizedcategory_map:    编程: programming    Hexo：Hexo    生活: life    其他: othertag_map:</code></pre><p>（map为分类模板，按照post的categories属性路径分类，前为显示的名称，后为路径）</p><p>在scaffolds&#x2F;post.md修改生成（hexo n “”）post时的模板。加入categories：，使生成的posts初始格式带categories</p><p>修改生成的post.md中的categories：”写好的分类”<br>自动关联路径source&#x2F;写好的分类</p><h3 id="问题-已解决"><a href="#问题-已解决" class="headerlink" title="问题-已解决"></a>问题-已解决</h3><p><strong>左上角logo在托管界面无法正常显示</strong></p><p>已解决：把 images&#x2F;logo.svg路径换为&#x2F;logo.svg,让它用和favicon一样的图<br>相对路径错误？（上传到GitHub的文件格式与本地不同）</p><p><strong>git push: error403</strong><br>    github: Permission to xxxx.git denied to yyy. （ fatal: 无法访问 returned error: 403）</p><pre><code>git remote set-url git@github.com:infine-zero/infine-zero.github.io.git</code></pre><p>**ssh: connect to host github.com port 22: Connection timed out<br>fatal: Could not read from remote repository.<br>**<br>    git安装位置，etc&#x2F;.ssh&#x2F;ssh_config.yml末尾添加<br>        Host github.com<br>        Hostname ssh.github.com<br>        User git<br>        PreferredAuthentications publickey<br>        IdentityFile ~&#x2F;.ssh&#x2F;id_rsa # eg. ~&#x2F;.ssh&#x2F;id_rsa<br>        Port 443</p><p><strong>后来的博文中文显示乱码</strong><br>安装<br>npm install hexo-auto-canonical –save</p><pre><code># 解决中文乱码问题  auto_canonical:  relative: false  extension: &#39;.html&#39; ```</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;建站成功&quot;&gt;&lt;a href=&quot;#建站成功&quot; class=&quot;headerlink&quot; title=&quot;建站成功&quot;&gt;&lt;/a&gt;建站成功&lt;/h2&gt;&lt;p&gt;2023 | 4 | 15&lt;/p&gt;
-&lt;h2 id=&quot;加入加密功能&quot;&gt;&lt;a href=&quot;#加入加密功能&quot; class=&quot;hea</summary>
-      
-    
-    
-    
-    <category term="programming" scheme="https://infine-zero.github.io/categories/programming/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Journal 16| Home in Snow</title>
     <link href="https://infine-zero.github.io/2024/01/22/Journal-16-Home-in-Snow/"/>
     <id>https://infine-zero.github.io/2024/01/22/Journal-16-Home-in-Snow/</id>
@@ -469,6 +446,30 @@
     
     
     <category term="none-sense" scheme="https://infine-zero.github.io/tags/none-sense/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Journal 8| Develop photos</title>
+    <link href="https://infine-zero.github.io/2023/04/17/Journal-8-Develop-photos/"/>
+    <id>https://infine-zero.github.io/2023/04/17/Journal-8-Develop-photos/</id>
+    <published>2023-04-16T18:35:03.000Z</published>
+    <updated>2023-04-17T17:16:24.320Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="pond-230416"><a href="#pond-230416" class="headerlink" title="pond_230416"></a>pond_230416</h2><p>something else that lives in here.</p><hr><h1 id="Scene-1-Passage"><a href="#Scene-1-Passage" class="headerlink" title="Scene 1:Passage"></a>Scene 1:Passage</h1><p><img src="https://s2.loli.net/2023/04/17/FUyd1Hel83QJ7Lt.jpg" alt="cool path"></p><p><img src="https://s2.loli.net/2023/04/17/J7uhpEFboXUnCqY.jpg" alt="overwhelmed life"></p><p><img src="https://s2.loli.net/2023/04/17/kxFElKjAOd6YJbT.jpg" alt="hold"></p><h1 id="Scene-2-Harvest"><a href="#Scene-2-Harvest" class="headerlink" title="Scene 2:Harvest"></a>Scene 2:Harvest</h1><p><img src="https://s2.loli.net/2023/04/17/TbNfuXzYZEynilO.jpg" alt="stand out"></p><p><img src="https://s2.loli.net/2023/04/17/kPcFhV9OLuaxobl.jpg" alt="mountain of harvest"></p><h1 id="Scene-3-Masque"><a href="#Scene-3-Masque" class="headerlink" title="Scene 3:Masque"></a>Scene 3:Masque</h1><p><img src="https://s2.loli.net/2023/04/17/5wJlQjWrbz8M2Eu.jpg" alt="embrace, one step forward, and back"></p><p><img src="https://s2.loli.net/2023/04/17/R29cfMsxIAa8K6O.jpg" alt="can I come closer?"></p><p><img src="https://s2.loli.net/2023/04/17/KbtF45BNI2T1C9f.jpg" alt="closer to gaze"></p><p><img src="https://s2.loli.net/2023/04/17/zWldFeCRABrK2wI.jpg" alt="our story to be continued"></p><hr><h1 id="Scene-4-Home"><a href="#Scene-4-Home" class="headerlink" title="Scene 4:Home"></a>Scene 4:Home</h1><p><img src="https://s2.loli.net/2023/04/17/adGVZULtXj4b6vo.jpg" alt="Fallingwater Pennsylvania"></p><p><img src="https://s2.loli.net/2023/04/17/G3jfi5VxR8Q7pgX.jpg" alt="abandoned, free wallet"></p><p><img src="https://s2.loli.net/2023/04/17/FkVWQSwdPslUIuR.jpg" alt="grass house"></p><p><img src="https://s2.loli.net/2023/04/17/KHtuJWBip54XfoM.jpg" alt="tree fall"></p><p><img src="https://s2.loli.net/2023/04/17/1KmIsBdYth9WkXc.jpg" alt="a hug, from trees"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;pond-230416&quot;&gt;&lt;a href=&quot;#pond-230416&quot; class=&quot;headerlink&quot; title=&quot;pond_230416&quot;&gt;&lt;/a&gt;pond_230416&lt;/h2&gt;&lt;p&gt;something else that lives in here.</summary>
+      
+    
+    
+    
+    <category term="life" scheme="https://infine-zero.github.io/categories/life/"/>
+    
+    
+    <category term="plants" scheme="https://infine-zero.github.io/tags/plants/"/>
     
   </entry>
   
