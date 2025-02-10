@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://infine-zero.github.io/2024/04/16/hello-world/</loc>
+    
+    <lastmod>2025-02-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://infine-zero.github.io/2025/02/10/250210/</loc>
     
     <lastmod>2025-02-10</lastmod>
@@ -59,15 +68,6 @@
     <loc>https://infine-zero.github.io/2024/04/16/Journal-18-Botanical-Garden-Rewind/</loc>
     
     <lastmod>2024-04-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://infine-zero.github.io/2023/04/15/hello-world/</loc>
-    
-    <lastmod>2024-01-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
