@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Infine">
+
+
+  <meta name="subtitle" content="infine_island： Welcome to wander. Comments are available here. For best experience, sincerely recommend using a PC.">
+
+
+  <meta name="description" content="welcome to wander">
+
+
+
+<title>Artical 1| Things About Hongkong - From Pass to Wander | INLAND</title>
+
+
+
+<link rel="icon" href="/logo.svg">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+
+
+<script src="/lib/nprogress/nprogress.js"></script>
+
+<script>
+  $(document).ready(() => {
+    NProgress.configure({
+      showSpinner: false,
+    });
+    NProgress.start();
+    $("#nprogress .bar").css({
+      background: "#de7441",
+    });
+    $("#nprogress .peg").css({
+      "box-shadow": "0 0 2px #de7441, 0 0 4px #de7441",
+    });
+    $("#nprogress .spinner-icon").css({
+      "border-top-color": "#de7441",
+      "border-left-color": "#de7441",
+    });
+    setTimeout(function () {
+      NProgress.done();
+      $(".fade").removeClass("out");
+    }, 800);
+  });
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+  })();
+  window.onload = function () {
+    // init iconify icon
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
+      $("#toggle-dark").attr("icon", "ri:moon-line");
+    } else {
+      $("#toggle-dark").attr("icon", "ri:sun-line");
+    }
+
+    const toggleDark = () => {
+      console.log("toggle dark");
+      const darkMode = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("hexo-color-scheme", darkMode ? "dark" : "light");
+      $("#toggle-dark").attr("icon", darkMode ? "ri:moon-line" : "ri:sun-line");
+    };
+
+    $("#toggle-dark").click(toggleDark);
+  };
+</script>
+
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="INLAND" type="application/atom+xml">
+</head>
+<body class="font-sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200">
+  <header class="fixed w-full px-5 py-1 z-10 backdrop-blur-xl backdrop-saturate-150 border-b border-black/5">
+  <div class="max-auto">
+    <nav class="flex items-center text-base">
+      <a href="/" class="group">
+        <h2 class="font-medium tracking-tighterp text-l p-2">
+          <img class="w-5 mr-2 inline-block transition-transform group-hover:rotate-[30deg]" src="/logo.svg" alt="INLAND" />
+          INLAND
+        </h2>
+      </a>
+      <div id="header-title" class="opacity-0 md:ml-2 md:mt-[0.1rem] text-xs font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        about
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-2">
+        
+          <a class="hidden sm:flex" href="/category">Categories</a>
+        
+          <a class="hidden sm:flex" href="/about">About</a>
+        
+        
+          
+            <a class="w-5 h-5 hidden sm:flex" title="Bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/10838981">
+              <iconify-icon width="20" icon="ri:bilibili-line"></iconify-icon>
+            </a>
+          
+        
+        <a class="w-5 h-5" title="toggle theme">
+          <iconify-icon width="20" icon="ri:sun-line" id="toggle-dark"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 ml-3 sm:hidden">
+        <span class="w-5 h-5" aria-hidden="true" role="img" id="open-menu">
+          <iconify-icon width="20" icon="carbon:menu" ></iconify-icon>
+        </span>
+        <span class="w-5 h-5 hidden" aria-hidden="true" role="img" id="close-menu">
+          <iconify-icon  width="20" icon="carbon:close" ></iconify-icon>
+        </span>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="menu-panel" class="h-0 overflow-hidden sm:hidden fixed left-0 right-0 top-12 bottom-0 z-10">
+  <div id="menu-content" class="relative z-20 bg-white/80 px-6 sm:px-8 py-2 backdrop-blur-xl -translate-y-full transition-transform duration-300">
+    <ul class="nav flex flex-col sm:flex-row text-sm font-medium">
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/category" class="flex h-12 sm:h-auto items-center">Categories</a>
+        </li>
+      
+        <li class="nav-portfolio sm:mx-2 border-b sm:border-0 border-black/5 last:border-0 hover:text-main">
+          <a href="/about" class="flex h-12 sm:h-auto items-center">About</a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="mask bg-black/20 absolute inset-0"></div>
+</div>
+
+  <main class="p-6">
+    <!-- toc -->
+
+  <!-- tocbot -->
+<nav class="post-toc toc text-sm w-48 relative top-32 right-0 opacity-70 hidden lg:block" style="position: fixed !important;"></nav>
+
+
+<section class="px-0 max-w-prose mx-auto md:px-0">
+  <!-- header -->
+  <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+    <div class="pt-4 md:pt-6">
+      <h1 id="article-title" class="text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+        Artical 1| Things About Hongkong - From Pass to Wander
+      </h1>
+      <p class="mb-6">
+        
+      </p>
+      <div>
+        <section class="flex items-center gap-3 text-sm">
+          <time>2025-02-10 21:48:17</time>
+          <span class="text-gray-400">·</span>
+          <span>1 min</span>
+          <span class="text-gray-400">·</span>
+          <span>211 words</span>
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content mt-10 prose dark:prose-invert post-content">
+    <p>Simplified Chinese version 0.1 released.</p>
+<h3 id="����"><a href="#����" class="headerlink" title="����"></a>����</h3><p>ע��ڰ�����ʱ��, �޺�Ϊ24:00, ����22:30;<br>�Դ�Ϊ��,�ӵ����³��㵽���ϸ���, ��ʱ��Сʱ+</p>
+<h5 id="��Ϊ"><a href="#��Ϊ" class="headerlink" title="��Ϊ"></a>��Ϊ</h5><ul>
+<li>ͨ��·�̽�ֹ���պ�ͣ��</li>
+<li>����û�����ӡ�Ĺ���ƾ֤(��Ȼû�õ�)</li>
+<li><ol>
+<li>��ָʾ���ȹ�һ�ΰ���, ��������Ҫˢ���θ۰�ͨ��֤�Ͱ�ָ��, ��ͨ��֤���ڻ�����Ӧ������Ļָʾ��������. ����ӡʱ�øɾ���Ĵָ��������, ��������ͷ; �������������̾���ʾ������Ա߹�����Ա.</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>���غ���ͨ������, ������۷��뾳��, �����Ϸ���ɫָʾ��д�ŷÿʹ��Ļ���ͨ��, ע������ͨ��֤, ���ǲ���;</li>
+</ol>
+</li>
+</ul>
+<h5 id="��Ʒ"><a href="#��Ʒ" class="headerlink" title="��Ʒ"></a>��Ʒ</h5><ul>
+<li>����Я���������(�����ʻ�ˮ��), ���ؿɴ�ˮ���ʻ�, ���ɴ����⵰; </li>
+<li>Я�����Ӳ�Ʒ��ؿ��ܱ�Ҫ���鹺��֤��, ��Ϊ����Я������۹���ļ�ֵ����ĵ��Ӳ�Ʒ���(����ʵ���޺��͸���ڰ�������, �˺ܶ����Ҳ�ܿ�)<br>  &#x3D;&#x3D;! ע��: ���ʱ�鼮���ܱ����, ����Я������ɫ���鿯�������ڽ����(ʵ���Ͽ��ܲ���, �����֮���ھ��ڲ��δ�걨��Υ����Ʒ������)&#x3D;&#x3D;</li>
+</ul>
+<h5 id="����-1"><a href="#����-1" class="headerlink" title="����"></a>����</h5><ul>
+<li>�ڰ����߶��кܶ�ɻ���Ĺ�̨, ���ʲ�֪��</li>
+<li>�����ǰԤԼ�����л���, ��ʵʱ����</li>
+<li>��۳����ܶ໻�㴦, ���ʲ�֪��</li>
+</ul>
+<h3 id="��ͨ�븶��"><a href="#��ͨ�븶��" class="headerlink" title="��ͨ�븶��"></a>��ͨ�븶��</h3><h5 id="�������г�"><a href="#�������г�" class="headerlink" title="�������г�"></a>�������г�</h5><ul>
+<li>Google Map: �ɿ��ص�����, ��λ�ò���ʮ��׼ȷ</li>
+<li>�ߵµ�ͼ: �����λ���������׼ȷ ���Ѳ���һЩ����</li>
+<li>���ܿ羳����·��, ���޷���ʾ</li>
+<li>Google Map������ʱ�䲻׼ȷ, ������������, ��ʱƫ��; Ҳ�������·ʱ��; �����ڸ�������ʱ������30������ԣ;</li>
+</ul>
+<h5 id="��ͨ"><a href="#��ͨ" class="headerlink" title="��ͨ"></a>��ͨ</h5><p>&#x3D;&#x3D;������ͨ�ڽ�ֹ��ʳ&#x3D;&#x3D;</p>
+<ul>
+<li><p>����<br>  ����Ҫ����</p>
+<ul>
+<li>����೵: �˶�ʱ�ӿڰ��������İ�ʿ, ֻ����ˮ, ����¥�������ٵ�������¥������ͨ����;<br>  &#x3D;&#x3D;!ע��: ǰ���ڰ����г�����ˮ�ֲ�, ע�⿴��������ʾ��һ�ൽ�޺�����������(����ڰ�)&#x3D;&#x3D;</li>
+</ul>
+</li>
+<li><p>����</p>
+<ul>
+<li>����೵: �˶�ʱ�ӿڰ��������İ�ʿ, ֻ��ĳЩ�����</li>
+<li>С��: ֻ���ֽ��˴�ͨ, ��ֹվ��, ����Ѹ����λ����</li>
+<li>������: �����ʿ, ��·�м�ĵ����ϳ�, ÿվ��ͣ, ��ǰ��ǰ�ŵȴ��³�, �³�ʱ��Ǯ<br>  &#x3D;&#x3D;!ע��: ����վ, ���������ⰴ�в������ϵ�stop���ͣ��, ע��۲�&#x3D;&#x3D;; ���а�ʿ��ȫ�̼�</li>
+</ul>
+</li>
+<li><p>��ʿ</p>
+<ul>
+<li>����ָ���ص����³�,��Ϊ�̵ĺͺ��, ��Ӫ��Χ��ͬ, ���ɿ�����ʻ;</li>
+</ul>
+</li>
+</ul>
+<h4 id="����-2"><a href="#����-2" class="headerlink" title="����"></a>����</h4><ul>
+<li>�ֽ�: ��ѡ, ���еط�, ��������</li>
+<li>�˴�ͨ:<ul>
+<li>ˢ���й�����ͨ�ͳ����󲿷���pos���ĵط�</li>
+<li>ˢ�������Ż�, ��hk�����ܹ�, �Ƽ�����</li>
+<li>��Ϊ���۰�����ð�,  ����ѡ���۰�, ���ڶ��ѡ����; ios&#x2F;��Ϊ�����ͺſ����ϰ���<ul>
+<li>���۰�: 711�ȱ�����ɹ�, 39����տ�(���˰�, ��ͯ��, ���߰�), ������������, �����˿�, ��ˢ����ֵ, Ϊ�����ܼ���ˢ, �����³�ֵ ;</li>
+<li>���ð�: �ڰ��͵���վ�ҹ�̨������Ա����(���˰�, ��ͯ��, ���߰�), �ƺ�Ҫ���ֽ�; ͨ��200�İ���(�ں�50��Ѻ���150�Ľ��); ���˿�; ������������</li>
+<li>���ϰ���: ios��ͨ��googleǮ��ʵ��nfcˢ��; ��Ϊ��Ӧ���г����ذ˴�ͨ�ÿͰ�, ��ˢnfc; ���ల׿�ͺſ��ܲ�֧��;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>֧����<ul>
+<li>�����е����, �ó˳����ˢ���</li>
+<li>���ֵ����б�ʶ��alipay��pos��</li>
+</ul>
+</li>
+<li>΢��<ul>
+<li>���С����</li>
+<li>���ֵ�֧��WeChat pay</li>
+</ul>
+</li>
+<li>&#x3D;&#x3D;! ע��: ���ֻ���ֽ�, ��ũ���̯�ȸ��廧����1000Ԫ; ������711������&#x3D;&#x3D;</li>
+</ul>
+<h3 id="��ʳ"><a href="#��ʳ" class="headerlink" title="��ʳ"></a>��ʳ</h3><h5 id="ѡ��"><a href="#ѡ��" class="headerlink" title="ѡ��"></a>ѡ��</h5><p>�����Ԥ�Ʋ�, ��google map������,���ֽ�Ϊ��ʵ.<br>����֮ѡΪ�緹�����˾�100��, ζ�����񶼺ܲ���.��巹����˰ٷ�֮��ʮ.</p>
+<h5 id="�㵥"><a href="#�㵥" class="headerlink" title="�㵥"></a>�㵥</h5><p>���ݵ�˶�Ϊ���ݼ��ݲ˵��˹��㵥, ����ÿ���в�ͬ���ղ˵��ֻ�, ���ղ˵�Ϊ�����ײ�, ����һ���˺��׷�, �Լ�Ǯ���Զ�Ӱ���ʱ�ߺ���Ʒ.</p>
+<h5 id="����-3"><a href="#����-3" class="headerlink" title="����"></a>����</h5><p>���ֽ�����������Ӳ������, ��ȡ</p>
+<h3 id="�����Ƽ�L�jؼ�������ʽ"><a href="#�����Ƽ�L�jؼ�������ʽ" class="headerlink" title="�����Ƽ�Ŀ�ĵؼ�������ʽ"></a>�����Ƽ�Ŀ�ĵؼ�������ʽ</h3><p>��ȷ�е�, ֻ���ҵ��μ�.</p>
+<h5 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h5><p>��۲������γ���, ������ӵ��������. ���������������ͨѧ������, ���˼��Ҳ��͸�ɫ����У���µ���������һ����ӯ���ڰ�.</p>
+<p>����������С��, ��������������ũ�غ�ɽ��, �������ĳ�����ҡҷ, �䵽խխ�����е���, ����ʢ�ŵͰ���ɫ�ϻ���С·����, ����ͽ����������С¹�ܹ�����.<br>Զ����ɽ�ν���, ��������, ���������ɰ�. ���ǳ�Ⱥ�ĺ�����ȵ����ƮȻ�������ڴ�������, ����������ȵ�ͣ�ڵ�����, ���������ٵ�ˮ��, ��ǱѼ��Ⱥ��������, ���������Ĳ�������.</p>
+<p>��ĺɫ�ĺ�, �԰����ڵ�¥�Ȼ�ڻ�ԭ���έ������˸���޺�Ļ���, �˿�Ϧ���������ص���һ��, �����ܼ�Ȯ����.��ʱ������̫���Ͳ�ľ��ˮ��ȭ��������Ϯ��������������ڰ�����������, ��Ӳ��ȥ, �ڻ����������Ϧɫ��. �ڻ�������������������, ȥѰ���µĹ�������. ���������ׯ, �������ʿ�����ӹ�����, ǿ��ķ�ѹ����һ������, ˳��һ׮׮”xx�͏a, ���,����,С�N,��Ѳ�܇”�Ļ�ɫ������,�ܿ���motel�Ƶķ�ׯ�ͱ�����. �ⷱ����������кβ�ͬ, ��Ȼ��ȫû����ʶ��.</p>
+<p>�����ſ�̽ͷ̽��֮��, ����ʵ���޷��ܾ�tvb������һ�����������Ľ�����������, ���ӵؽ�����. ������, �����̺ܿ�Ϊ���Ƕ���������, ��Ի: “������”.��������, �㸮�����Ǽ���������, ���ԼҲΪ���ǵ��������̳��˰�. ���ؿ��˼���˵�, �����ſڡ�ǽ����д�Ĳ˵���ͬ���ղ˵�һ���о�����, ��������ε��, �������ߵü���, �̲�ס�ȴ�ȼ�����. ���������Ǹ�ī������������������˸���, Ȼ������ˡ��н��������Ϻ��߲�(ȫ�Ǳ����ܲ���䷽,����������), ������һ���κ��˶����ú��ʵ���ζ, �����ڶ����˵İ���ζ��. �ð��������ѯ�ʺ����ڵ���3�Ų�ͬ4�Ų�(ֻҪ60��!��2�Ĵ�����; �ֳ�, �ȴ���Сʱ������,�й���,������,�ж�), һ�����̻����Ծ�����, ׷���ˆ���������, ʮ���㻬�۵�, ����һ���ͳ�, ��Ȼ�Ƿ�ǽ����.<br>tbc -����- ps. ����û���뿴, anyway������д</p>
+
+  </article>
+  <!-- tag -->
+  <div class="mt-12 pt-6 border-t border-gray-200">
+    
+      
+        <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 m-1 text-sm rounded-md transition-colors hover:bg-gray-200">
+          <a href="/tags/society/">society</a>
+        </span>
+      
+    
+  </div>
+  <!-- prev and next -->
+  <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+    <div>
+      
+    </div>
+    <div>
+      
+        <a href="/2025/02/08/250208/" class="text-sm text-gray-400 hover:text-gray-500 flex justify-center">
+          Journal 22| Poyang Lake
+          <iconify-icon width="20" icon="ri:arrow-right-s-line" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+<script src="https://giscus.app/client.js"
+        data-repo="infine-zero/giscus"
+        data-repo-id="R_kgDOJXiISw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJXiIS84CV0ca"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </div>
+</section>
+
+  </main>
+  <footer class="flex flex-col h-40 items-center justify-center text-gray-400 text-sm">
+  <!-- busuanzi -->
+  
+
+  <!-- copyright -->
+  </div class>
+    <span>© 2022</span>
+    <iconify-icon width="18" icon="emojione-monotone:maple-leaf" ></iconify-icon>
+    <a href="https://github.com/xbmlz" target="_blank" rel="noopener noreferrer">xbmlz</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-2">
+    <span>Powered by</span>
+    <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank" rel="noopener noreferrer">Maple</a>
+  </div>
+
+</footer>
+<script>
+      var now = new Date(); 
+      function createtime() { 
+          var grt= new Date("03/12/2019 12:00:00");//此处修改你的建站时间或者网站上线时间 
+          now.setTime(now.getTime()+250); 
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+  setInterval("createtime()",250);
+  </script>
+  <iconify-icon class="fixed right-4 bottom-10 z-100 opacity-0" width="24" icon="ion:arrow-up-c" id="go-top"></iconify-icon>
+  
+<script src="/lib/clipboard.min.js"></script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+
+</body>
+
+</html>
