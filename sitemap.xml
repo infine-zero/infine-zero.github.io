@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://infine-zero.github.io/2025/02/11/250211/</loc>
+    
+    <lastmod>2025-02-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://infine-zero.github.io/2025/02/10/250210/</loc>
     
     <lastmod>2025-02-10</lastmod>
@@ -301,7 +310,7 @@
 
   <url>
     <loc>https://infine-zero.github.io/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -309,91 +318,98 @@
   
   <url>
     <loc>https://infine-zero.github.io/tags/landscape-birds/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/birds-landscape/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/society/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/birds/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/plants/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/objects/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/winter/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/birds-plants-winter/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/landscape/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/birds-plants/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/images/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/plants-landscape/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/tags/none-sense/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://infine-zero.github.io/tags/landscape-birds-city/</loc>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -402,28 +418,28 @@
   
   <url>
     <loc>https://infine-zero.github.io/categories/life/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/categories/tutorial/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/categories/programming/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://infine-zero.github.io/categories/other/</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
